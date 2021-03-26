@@ -10,9 +10,9 @@ public class MakeCube : MonoBehaviour
     MeshRenderer meshRenderer;
     MeshFilter meshFilter;
 
+    int X, Y, Z;
+
     Vector3[] vertex;
-
-
 
     int[] Cube;
 
@@ -60,11 +60,11 @@ public class MakeCube : MonoBehaviour
 
         Cube = new[]
         {
-            0,1,2,  // T_1 Cube 1
-            1,3,2, // T_2 Cube 1
+            0,1,2, 
+            1,3,2, 
 
-            4,0,5, // T_1 Cube 2
-            4,5,6, // T_2 Cube 2
+            4,0,5, 
+            4,5,6, 
 
             10, 7, 8,
             8, 7, 9,
@@ -76,11 +76,23 @@ public class MakeCube : MonoBehaviour
             0, 15, 1,
 
             17, 2, 3,
-            17, 8, 3,
+            17, 8, 9,
         };
 
         meshFilter.mesh.triangles = Cube;
 
-    }
 
+        for (X = 0; X <= 2; X++)
+        {
+            for (Y = 0; Y <= 2; Y++)
+            {
+                for (Z = 0; Z <= 2; Z++)
+                {
+                    Vector3 Position = transform.TransformPoint(X, Y, Z);
+                    Quaternion Rotation = Quaternion.Euler(0, 0, 0);
+                    Instantiate(meshFilter, Position, Rotation);
+                }    
+            }
+        }
+    }
 }
