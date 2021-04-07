@@ -43,4 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43ae1e215f9433b4f8c3d06f824ed661, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: 1944af7a187b3c245b15858397b3cca6, type: 2}
+  material: {fileID: 2100000, guid: 4bc576851c14fb3429d65917aeb8902c, type: 2}
+  texture: {fileID: 2800000, guid: 41bc654f38aa5024ab5d69bb26a60920, type: 3}
