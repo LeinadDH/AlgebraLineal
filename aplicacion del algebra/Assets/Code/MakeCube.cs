@@ -30,8 +30,8 @@ public class MakeCube : MonoBehaviour
         meshFilter.mesh = mesh;
         float size = 1f;
         vertex = new[]
-                {
-              new Vector3(0, size, 0),
+        {
+            new Vector3(0, size, 0),
             new Vector3(0, 0, 0),
             new Vector3(size, size, 0),
             new Vector3(size, 0, 0),
@@ -73,7 +73,8 @@ public class MakeCube : MonoBehaviour
 
         };
 
-        Vector2[] uvs = {
+        Vector2[] uvs = 
+        {
             new Vector2(0, 0.66f),
             new Vector2(0.25f, 0.66f),
             new Vector2(0, 0.33f),
