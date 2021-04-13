@@ -152,8 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e35fc3cd64494174684d1dd86e5377b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: 5c9dcfaa55c93764b8280f6c85e27203, type: 2}
-  texture: {fileID: 2800000, guid: a7cf2c9d4df989d4ab9ab91c6bdacf03, type: 3}
+  material: {fileID: 2100000, guid: a0d08a441ea28224696d721e24f5d8a4, type: 2}
+  texture: {fileID: 2800000, guid: 7d79ed0d47c69da428def6c0852ecd22, type: 3}
 --- !u!4 &112493558
 Transform:
   m_ObjectHideFlags: 0
@@ -162,7 +162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112493556}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.0100002, y: 3.2200003, z: -9.57}
+  m_LocalPosition: {x: 0.76, y: 5.82, z: -7.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -194,10 +194,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 269467345}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7add063c34e822144808251cd198e529, type: 3}
+  m_Script: {fileID: 11500000, guid: e35fc3cd64494174684d1dd86e5377b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: 1944af7a187b3c245b15858397b3cca6, type: 2}
+  material: {fileID: 2100000, guid: 5c9dcfaa55c93764b8280f6c85e27203, type: 2}
+  texture: {fileID: 2800000, guid: a7cf2c9d4df989d4ab9ab91c6bdacf03, type: 3}
 --- !u!4 &269467347
 Transform:
   m_ObjectHideFlags: 0
@@ -206,7 +207,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269467345}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.496633, y: 5.249729, z: 1.7064838}
+  m_LocalPosition: {x: 0, y: 5.249729, z: -4.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

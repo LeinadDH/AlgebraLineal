@@ -6,7 +6,6 @@ public class D20 : MonoBehaviour
 {
     public Material material;
 
-    float A = 1.48f;
     Mesh mesh;
     MeshRenderer meshRenderer;
     MeshFilter meshFilter;
@@ -32,25 +31,105 @@ public class D20 : MonoBehaviour
 
         vertex = new[]
         {
-           new Vector3(0 + A, 0 + A, 0 + A), //A 0
-           new Vector3(2.3f + A, 0 + A, 0 + A), //b 1
-           new Vector3(1.15f + A, 1.99f + A, 0 + A), //c 2
-           new Vector3(1.15f + A, -1.48f + A, 1.33f + A), //d 3
-           new Vector3(3.01f + A, 1.74f + A, 1.33f + A), //e 4
-           new Vector3(-0.71f + A, 1.74f + A, 1.33f + A), //f 5
-           new Vector3(-0.71f + A, -0.41f + A, 2.15f + A), //g 6
-           new Vector3(3.01f + A, -0.41f + A, 2.15f + A), //h 7
-           new Vector3(1.15f + A, 2.81f + A, 2.15f + A), //i 8
-           new Vector3(1.15f + A, -0.66f + A, 3.48f + A), //j 9
-           new Vector3(2.3f + A, 1.33f + A, 3.48f + A), //k 10
-           new Vector3(0 + A, 1.33f + A, 3.48f + A), // l 11
+            //triangulo 1
+            new Vector3(0,0,0),// A
+            new Vector3(1,0,0), // B
+            new Vector3(0.5f,0,0.87f), // C
+        
+            //triangulo 2
+            new Vector3(0,0,0),// A
+            new Vector3(1,0,0), // B
+            new Vector3(0.5f,0.58f,-0.65f), // D
+             
+            //triangulo 3
+            new Vector3(0,0,0),// A
+            new Vector3(0.5f,0.58f,-0.65f), // D
+            new Vector3(-0.31f,0.93f,-0.18f), // G
 
-           new Vector3(0 + A, 0 + A, 0 + A), //A 0
-           new Vector3(2.3f + A, 0 + A, 0 + A), //b 1
-           new Vector3(1.15f + A, 1.99f + A, 0 + A), //c 2
-           new Vector3(1.15f + A, -1.48f + A, 1.33f + A), //d 3
-           new Vector3(3.01f + A, 1.74f + A, 1.33f + A), //e 4
-           new Vector3(-0.71f + A, 1.74f + A, 1.33f + A), //f 5
+            //triangulo 4
+            new Vector3(0,0,0),// A
+            new Vector3(-0.31f,0.93f,-0.18f), // G
+            new Vector3(-0.31f,0.58f,0.76f), // F
+          
+            //triangulo 5
+            new Vector3(0,0,0),// A
+            new Vector3(-0.31f,0.58f,0.76f), // F
+            new Vector3(0.5f,0,0.87f), // C
+           
+            //triangulo 6
+            new Vector3(1,0,0),// B
+            new Vector3(0.5f,0.58f,-0.65f), // D
+            new Vector3(1.31f,0.93f,-0.18f), // H
+
+            //triangulo 7
+            new Vector3(0.5f,0.58f,-0.65f),// D
+            new Vector3(1.31f,0.93f,-0.18f), // H
+            new Vector3(0.5f,1.51f,-0.29f), // J
+
+            //triangulo 8
+            new Vector3(0.5f,0.58f,-0.65f),// D
+            new Vector3(0.5f,1.51f,-0.29f), // J
+            new Vector3(-0.31f,0.93f,-0.18f), // G
+
+            //triangulo 9
+            new Vector3(0,1.51f,0.58f),// L
+            new Vector3(0.5f,1.51f,-0.29f), // J
+            new Vector3(-0.31f,0.93f,-0.18f), // G
+
+            //triangulo 10
+            new Vector3(0,1.51f,0.58f),// L
+            new Vector3(-0.31f,0.58f,0.76f), // F
+            new Vector3(-0.31f,0.93f,-0.18f), // G
+
+            //triangulo 11
+            new Vector3(0,1.51f,0.58f),// L
+            new Vector3(-0.31f,0.58f,0.76f), // F
+            new Vector3(0.5f,0.93f,1.22f), // I
+
+            //triangulo 12
+            new Vector3(0.5f,0,0.87f), // C
+            new Vector3(-0.31f,0.58f,0.76f), // F
+            new Vector3(0.5f,0.93f,1.22f), // I
+
+            //triangulo 13
+            new Vector3(0.5f,0,0.87f),// C
+            new Vector3(1.31f,0.58f,0.76f), // E
+            new Vector3(0.5f,0.93f,1.22f), // I
+
+            //triangulo 14
+            new Vector3(0.5f,0,0.87f),// C
+            new Vector3(1.31f,0.58f,0.76f), // E
+            new Vector3(1,0,0), // B
+
+            //triangulo 15
+            new Vector3(1.31f,0.93f,-0.18f),// H
+            new Vector3(1.31f,0.58f,0.76f), // E
+            new Vector3(1,0,0), // B
+
+            //triangulo 16
+            new Vector3(1.31f,0.93f,-0.18f),// H
+            new Vector3(1.31f,0.58f,0.76f), // E
+            new Vector3(1,1.51f,0.58f), // K
+
+            //triangulo 17
+            new Vector3(1.31f,0.93f,-0.18f),// H
+            new Vector3(0.5f,1.51f,-0.29f), // J
+            new Vector3(1,1.51f,0.58f), // K
+
+            //triangulo 18
+            new Vector3(0,1.51f,0.58f),// L
+            new Vector3(0.5f,1.51f,-0.29f), // J
+            new Vector3(1,1.51f,0.58f), // K
+
+            //triangulo 19
+            new Vector3(0,1.51f,0.58f),// L
+            new Vector3(0.5f,0.93f,1.22f), // I
+            new Vector3(1,1.51f,0.58f), // K
+
+            //triangulo 20
+            new Vector3(1.31f,0.58f,0.76f),// E
+            new Vector3(0.5f,0.93f,1.22f), // I
+            new Vector3(1,1.51f,0.58f), // K     
         };
 
         
@@ -60,57 +139,130 @@ public class D20 : MonoBehaviour
 
         int[] triangles = 
         {
-
-            2, 5, 8,
-            2, 0, 5,
-            1, 0, 2,
-            1, 2, 4,
-            1, 3, 0,
-            4, 2, 8,
-            4, 8, 10,
-            4, 10, 7,
-            3, 1, 7,
-            1, 4, 7,
-            10, 8, 11,
-            11, 8, 5,
-            11, 5, 6,
-            10, 11, 9,
-            6, 9, 11,
-            6, 3, 9,
-            6, 0, 3,
-            0, 6, 5,
-            3, 7, 9,
-            9, 7, 10,
-
+            0,1,2,  //triangulo 1
+            3,5,4,  //triangulo 2
+            6,8,7, //triangulo 3
+            11,10,9, //triangulo 4
+            14,13,12, //triangulo 5
+            16,17,15, //triangulo 6
+            18,20,19, //triangulo 7
+            21,23,22, //triangulo 8
+            24,25,26, //triangulo 9
+            27,29,28, //triangulo 10
+            30,31,32, //triangulo 11
+            33,35,34, //triangulo 12
+            36,37,38, //triangulo 13
+            39,41,40, //triangulo 14
+            42,43,44, //triangulo 15
+            45,47,46, //triangulo 16
+            48,49,50, //triangulo 17
+            51,53,52, //triangulo 18
+            54,55,56, //triangulo 19
+            57,59,58, //triangulo 20
         };
 
         Vector2[] uvs =
         {
+            //triangulo 1
             new Vector2(0f, 0f),
             new Vector2(0f, 0.5f),
-            new Vector2(0f, 1f),
-
             new Vector2(0.2f, 0f),
+
+            //triangulo 2
+            new Vector2(0f, 0.5f),
+            new Vector2(0.2f, 0f),
+            new Vector2(0.2f, 0.5f),
+
+            //triangulo 3
+            new Vector2(0.2f, 0f),
+            new Vector2(0.4f, 0f),
+            new Vector2(0.2f, 0.5f),
+
+            //triangulo 4
+            new Vector2(0.4f, 0.5f),
+            new Vector2(0.4f, 0f),
+            new Vector2(0.2f, 0.5f),
+
+            //triangulo 5
+            new Vector2(0.4f, 0.5f),
+            new Vector2(0.4f, 0f),
+            new Vector2(0.6f, 0f),
+
+            //triangulo 6
+            new Vector2(0.6f, 0f),
+            new Vector2(0.4f, 0.5f),
+            new Vector2(0.6f, 0.5f),
+
+            //triangulo 7
+            new Vector2(0.6f, 0f),
+            new Vector2(0.8f, 0f),
+            new Vector2(0.6f, 0.5f),
+
+            //triangulo 8
+            new Vector2(0.6f, 0.5f),
+            new Vector2(0.8f, 0f),
+            new Vector2(0.8f, 0.5f),
+
+            //triangulo 9
+            new Vector2(0.8f, 0.5f),
+            new Vector2(0.8f, 0f),
+            new Vector2(1f, 0f),
+
+            //triangulo 10
+            new Vector2(1f, 0.5f),
+            new Vector2(0.8f, 0.5f),
+            new Vector2(1f, 0f),
+
+            //triangulo 11
+            new Vector2(0f, 0.5f),
+            new Vector2(0f, 1f),
+            new Vector2(0.2f, 0.5f),
+
+            //triangulo 12
+            new Vector2(0f, 1f),
             new Vector2(0.2f, 0.5f),
             new Vector2(0.2f, 1f),
 
-            new Vector2(0.4f, 0f),
+            //triangulo 13
+            new Vector2(0.2f, 0.5f),
+            new Vector2(0.2f, 1f),
+            new Vector2(0.4f, 0.5f),
+
+            //triangulo 14
+            new Vector2(0.2f, 1f),
             new Vector2(0.4f, 0.5f),
             new Vector2(0.4f, 1f),
 
-            new Vector2(0.6f, 0f),
+            //triangulo 15
+            new Vector2(0.4f, 0.5f),
+            new Vector2(0.4f, 1f),
+            new Vector2(0.6f, 0.5f),
+
+            //triangulo 16
+            new Vector2(0.4f, 1f),
             new Vector2(0.6f, 0.5f),
             new Vector2(0.6f, 1f),
 
-            new Vector2(0.8f, 0f),
+            //triangulo 17
+            new Vector2(0.6f, 0.5f),
+            new Vector2(0.6f, 1f),
+            new Vector2(0.8f, 0.5f),
+
+            //triangulo 18
+            new Vector2(0.6f, 1f),
             new Vector2(0.8f, 0.5f),
             new Vector2(0.8f, 1f),
 
-            new Vector2(1f, 0f),
+            //triangulo 19
+            new Vector2(0.8f, 0.5f),
+            new Vector2(0.8f, 1f),
             new Vector2(1f, 0.5f),
+
+            //triangulo 20
+            new Vector2(1f, 0.5f),
+            new Vector2(0.8f, 1f),
             new Vector2(1f, 1f),
         };
-
 
         meshFilter.mesh.triangles = triangles;
         meshFilter.mesh.uv = uvs;
