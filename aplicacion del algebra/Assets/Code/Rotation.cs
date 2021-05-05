@@ -6,9 +6,9 @@ public class Rotation : MonoBehaviour
 {
     public GameObject Cube;
 
-    public float Angle = 10;
+    float Angle = 10;
     public float Z, Y, X;
-    public Vector3 Position;
+    public Vector3 Position, firstPosition;
 
 
     private float[,] matrizX;
@@ -19,6 +19,7 @@ public class Rotation : MonoBehaviour
     void Start()
     {
         Position = Cube.transform.position;
+        firstPosition = Cube.transform.position;
 
         matrizX = new float[4, 4]
         {
@@ -74,4 +75,5 @@ public class Rotation : MonoBehaviour
 
         Cube.transform.position = new Vector3(X, Y, Position.z);
     }
+
 }
