@@ -5,11 +5,16 @@ using UnityEngine;
 public class Rotation : MonoBehaviour
 {
     public GameObject Cube;
+    public GameObject pivote;
 
-    float Angle = 10;
+    public Vector3 posTemp;
+
+    public float Angle;
     public float Z, Y, X;
     public Vector3 Position, firstPosition;
 
+    public float timer;
+    public bool Rotate = false;
 
     private float[,] matrizX;
     private float[,] matrizY;
@@ -18,6 +23,8 @@ public class Rotation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Angle = 2;
+
         Position = Cube.transform.position;
         firstPosition = Cube.transform.position;
 
@@ -44,36 +51,121 @@ public class Rotation : MonoBehaviour
             {0, 0, 1, 0},
             {0, 0, 0, 1}
         };
+        
+
+    }
+
+    public void Update()
+    {
+        timer = Time.time;
+
+        if (timer >= 34f)
+        {
+            Rotate = true;
+            Cube.transform.position = Position;
+        }
+        if (timer >= 38f)
+        {
+            Destroy(Cube);
+        }
+
+        if (Rotate == false)
+        {
+            Angle = 2;
+
+            for (int i = 0; i < 24; i++)
+            {
+                if (i < 22)
+                {
+                    posTemp = pivote.transform.position;
+                    pivote.transform.position = new Vector3(0, 0, 0);
+
+                    Position = Cube.transform.position;
+
+                    Z = (Position.z * matrizY[0, 0]) + (Position.x * matrizY[2, 0]);
+                    X = (Position.z * matrizY[0, 2]) + (Position.x * matrizY[2, 2]);
+
+                    Cube.transform.position = new Vector3(X, Position.y, Z);
+                    pivote.transform.position = posTemp;
+                }
+            }
+        }
+
+        if (Rotate == true)
+        {
+            Angle = 3;    
+
+            for (int i = 0; i < 140; i++)
+            {
+                if (i < 2)
+                {
+
+                    posTemp = pivote.transform.position;
+                    pivote.transform.position = new Vector3(0, 0, 0);
+
+                    Position = Cube.transform.position;
+
+                    Z = (Position.z * matrizY[0, 0]) + (Position.x * matrizY[2, 0]);
+                    X = (Position.z * matrizY[0, 2]) + (Position.x * matrizY[2, 2]);
+
+                    Cube.transform.position = new Vector3(X, Position.y, Z);
+                    pivote.transform.position = posTemp;
+
+                    posTemp = pivote.transform.position;
+                    pivote.transform.position = new Vector3(0, 0, 0);
+
+                    Position = Cube.transform.position;
+
+                    Y = (Position.y * matrizX[1, 1]) + (Position.z * matrizX[2, 1]);
+                    Z = (Position.y * matrizX[1, 2]) + (Position.z * matrizX[2, 2]);
+
+                    Cube.transform.position = new Vector3(Position.x, Y, Z);
+                    pivote.transform.position = posTemp;
+                }
+            }
+        }
     }
 
     public void RotateX()
     {
+        posTemp = pivote.transform.position;
+        pivote.transform.position = new Vector3(0, 0, 0);
+
         Position = Cube.transform.position;
 
         Y = (Position.y * matrizX[1, 1]) + (Position.z * matrizX[2, 1]);
         Z = (Position.y * matrizX[1, 2]) + (Position.z * matrizX[2, 2]);
 
         Cube.transform.position = new Vector3(Position.x, Y, Z);
+        pivote.transform.position = posTemp;
     }
 
     public void RotateY()
     {
+        posTemp = pivote.transform.position;
+        pivote.transform.position = new Vector3(0, 0, 0);
+
         Position = Cube.transform.position;
 
         Z = (Position.z * matrizY[0, 0]) + (Position.x * matrizY[2, 0]);
         X = (Position.z * matrizY[0, 2]) + (Position.x * matrizY[2, 2]);
 
         Cube.transform.position = new Vector3(X, Position.y, Z);
+        pivote.transform.position = posTemp;
     }
 
     public void RotateZ()
     {
+        posTemp = pivote.transform.position;
+        pivote.transform.position = new Vector3(0, 0, 0);
+
         Position = Cube.transform.position;
 
         X = (Position.x * matrizZ[0, 0]) + (Position.y * matrizZ[1, 0]);
         Y = (Position.x * matrizZ[0, 1]) + (Position.y * matrizZ[1, 1]);
 
         Cube.transform.position = new Vector3(X, Y, Position.z);
+        pivote.transform.position = posTemp;
     }
 
 }

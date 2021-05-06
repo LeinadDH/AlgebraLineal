@@ -6,6 +6,7 @@ public class Examen : MonoBehaviour
 {
     public Material material;
 
+    float alinear = 1.5f;
     Mesh mesh;
     MeshRenderer meshRenderer;
     MeshFilter meshFilter;
@@ -32,714 +33,774 @@ public class Examen : MonoBehaviour
         vertex = new[]
         {
             //Rojo
-            new Vector3(0, -0.1f, 0), //A
-            new Vector3(0.25f, 0.5f, 0.5f), //B
-            new Vector3(0, 0.8f, 0.75f), //D
+            new Vector3(0, -0.1f - alinear, 0), //A
+            new Vector3(0.25f, 0.5f - alinear, 0.5f), //B
+            new Vector3(0, 0.8f - alinear, 0.75f), //D
 
             //Rojo
-            new Vector3(0, -0.1f, 0), //A
-            new Vector3(0, 0.8f, 0.75f), //D
-            new Vector3(-0.25f, 0.5f, 0.5f), //C
+            new Vector3(0, -0.1f - alinear, 0), //A
+            new Vector3(0, 0.8f - alinear, 0.75f), //D
+            new Vector3(-0.25f , 0.5f - alinear, 0.5f), //C
 
             //Rojo
-            new Vector3(0, 0.8f, 0.75f), //D
-            new Vector3(-0.25f, 0.5f, 0.5f), //C
-            new Vector3(-0.7f, 1, 0.5f), //H
+            new Vector3(0, 0.8f - alinear, 0.75f), //D
+            new Vector3(-0.25f, 0.5f - alinear, 0.5f), //C
+            new Vector3(-0.7f, 1 - alinear, 0.5f), //H
 
             //Rojo
-            new Vector3(0.25f, 0.5f, 0.5f), //B
-            new Vector3(0, 0.8f, 0.75f), //D
-            new Vector3(0.7f, 1, 0.5f), //G
+            new Vector3(0.25f, 0.5f - alinear, 0.5f), //B
+            new Vector3(0, 0.8f - alinear, 0.75f), //D
+            new Vector3(0.7f, 1 - alinear, 0.5f), //G
 
             //Morado
-            new Vector3(0.25f, 0.5f, 0.5f), //B
-            new Vector3(0.7f, 1, 0.5f), //G
-            new Vector3(0.4f, 0.1f, 0), //E
+            new Vector3(0.25f, 0.5f - alinear, 0.5f), //B
+            new Vector3(0.7f, 1 - alinear, 0.5f), //G
+            new Vector3(0.4f, 0.1f - alinear, 0), //E
 
             //Morado
-            new Vector3(-0.25f, 0.5f, 0.5f), //C
-            new Vector3(-0.7f, 1, 0.5f), //H
-            new Vector3(-0.4f, 0.1f, 0), //F
+            new Vector3(-0.25f, 0.5f - alinear, 0.5f), //C
+            new Vector3(-0.7f, 1 - alinear, 0.5f), //H
+            new Vector3(-0.4f, 0.1f - alinear, 0), //F
 
             //Morado
-            new Vector3(0, -0.1f, 0), //A
-            new Vector3(0.25f, 0.5f, 0.5f), //B
-            new Vector3(0.4f, 0.1f, 0), //E
+            new Vector3(0, -0.1f - alinear, 0), //A
+            new Vector3(0.25f, 0.5f - alinear, 0.5f), //B
+            new Vector3(0.4f, 0.1f - alinear, 0), //E
 
             //Morado
-            new Vector3(0, -0.1f, 0), //A
-            new Vector3(-0.25f, 0.5f, 0.5f), //C
-            new Vector3(-0.4f, 0.1f, 0), //F
+            new Vector3(0, -0.1f - alinear, 0), //A
+            new Vector3(-0.25f, 0.5f - alinear, 0.5f), //C
+            new Vector3(-0.4f, 0.1f - alinear, 0), //F
 
             //Rojo
-            new Vector3(0, 0.8f, 0.75f), //D
-            new Vector3(0.7f, 1, 0.5f), //G
-            new Vector3(0.25f, 1.25f, 0.75f), //I
+            new Vector3(0, 0.8f - alinear, 0.75f), //D
+            new Vector3(0.7f, 1 - alinear, 0.5f), //G
+            new Vector3(0.25f, 1.25f - alinear, 0.75f), //I
 
             //Rojo
-            new Vector3(0, 0.8f, 0.75f), //D
-            new Vector3(-0.7f, 1, 0.5f), //H
-            new Vector3(-0.25f, 1.25f, 0.75f), //J
+            new Vector3(0, 0.8f - alinear, 0.75f), //D
+            new Vector3(-0.7f, 1 - alinear, 0.5f), //H
+            new Vector3(-0.25f, 1.25f - alinear, 0.75f), //J
 
             //Rojo
-            new Vector3(0, 0.8f, 0.75f), //D
-            new Vector3(0.25f, 1.25f, 0.75f), //I
-            new Vector3(0, 1.3f, 1f), //K
+            new Vector3(0, 0.8f - alinear, 0.75f), //D
+            new Vector3(0.25f, 1.25f - alinear, 0.75f), //I
+            new Vector3(0, 1.3f - alinear, 1f), //K
 
             //Rojo
-            new Vector3(0, 0.8f, 0.75f), //D
-            new Vector3(-0.25f, 1.25f, 0.75f), //J
-            new Vector3(0, 1.3f, 1f), //K
+            new Vector3(0, 0.8f - alinear, 0.75f), //D
+            new Vector3(-0.25f, 1.25f - alinear, 0.75f), //J
+            new Vector3(0, 1.3f - alinear, 1f), //K
 
             //Morado
-            new Vector3(-0.7f, 1, 0.5f), //H
-            new Vector3(-0.4f, 0.1f, 0), //F
-            new Vector3(-0.8f, 0.6f, 0), //L
+            new Vector3(-0.7f, 1 - alinear, 0.5f), //H
+            new Vector3(-0.4f, 0.1f - alinear, 0), //F
+            new Vector3(-0.8f, 0.6f - alinear, 0), //L
 
             //Morado
-            new Vector3(0.7f, 1, 0.5f), //G
-            new Vector3(0.4f, 0.1f, 0), //E
-            new Vector3(0.8f, 0.6f, 0), //M
+            new Vector3(0.7f, 1 - alinear, 0.5f), //G
+            new Vector3(0.4f, 0.1f - alinear, 0), //E
+            new Vector3(0.8f, 0.6f - alinear, 0), //M
 
             //Verde
-            new Vector3(-0.7f, 1, 0.5f), //H
-            new Vector3(-1.2f, 1.25f, 0), //N
-            new Vector3(-0.8f, 0.6f, 0), //L
+            new Vector3(-0.7f, 1 - alinear, 0.5f), //H
+            new Vector3(-1.2f, 1.25f - alinear, 0), //N
+            new Vector3(-0.8f, 0.6f - alinear, 0), //L
 
             //Verde
-            new Vector3(0.7f, 1, 0.5f), //G
-            new Vector3(1.2f, 1.25f, 0), //O
-            new Vector3(0.8f, 0.6f, 0), //M
+            new Vector3(0.7f, 1 - alinear, 0.5f), //G
+            new Vector3(1.2f, 1.25f - alinear, 0), //O
+            new Vector3(0.8f, 0.6f - alinear, 0), //M
 
             //Morado
-            new Vector3(0.7f, 1, 0.5f), //G
-            new Vector3(1.2f, 1.25f, 0), //O
-            new Vector3(0.7f, 1.5f, 0.5f), //P
+            new Vector3(0.7f, 1 - alinear, 0.5f), //G
+            new Vector3(1.2f, 1.25f - alinear, 0), //O
+            new Vector3(0.7f, 1.5f - alinear, 0.5f), //P
 
             //Morado
-            new Vector3(-0.7f, 1, 0.5f), //H
-            new Vector3(-1.2f, 1.25f, 0), //N
-            new Vector3(-0.7f, 1.5f, 0.5f), //Q
+            new Vector3(-0.7f, 1 - alinear, 0.5f), //H
+            new Vector3(-1.2f, 1.25f - alinear, 0), //N
+            new Vector3(-0.7f, 1.5f - alinear, 0.5f), //Q
 
             //Rojo
-            new Vector3(0.25f, 1.25f, 0.75f), //I
-            new Vector3(0, 1.3f, 1f), //K
-            new Vector3(0.7f, 1.5f, 0.5f), //P
+            new Vector3(0.25f, 1.25f - alinear, 0.75f), //I
+            new Vector3(0, 1.3f - alinear, 1f), //K
+            new Vector3(0.7f, 1.5f - alinear, 0.5f), //P
 
             //Rojo
-            new Vector3(-0.25f, 1.25f, 0.75f), //J
-            new Vector3(0, 1.3f, 1f), //K
-            new Vector3(-0.7f, 1.5f, 0.5f), //Q
+            new Vector3(-0.25f, 1.25f - alinear, 0.75f), //J
+            new Vector3(0, 1.3f - alinear, 1f), //K
+            new Vector3(-0.7f, 1.5f - alinear, 0.5f), //Q
 
             //Rojo
-            new Vector3(0.7f, 1, 0.5f), //G
-            new Vector3(0.25f, 1.25f, 0.75f), //I
-            new Vector3(0.7f, 1.5f, 0.5f), //P
+            new Vector3(0.7f, 1 - alinear, 0.5f), //G
+            new Vector3(0.25f, 1.25f - alinear, 0.75f), //I
+            new Vector3(0.7f, 1.5f - alinear, 0.5f), //P
 
             //Rojo
-            new Vector3(-0.25f, 1.25f, 0.75f), //J
-            new Vector3(-0.7f, 1.5f, 0.5f), //Q
-            new Vector3(-0.7f, 1, 0.5f), //H
+            new Vector3(-0.25f, 1.25f - alinear, 0.75f), //J
+            new Vector3(-0.7f, 1.5f - alinear, 0.5f), //Q
+            new Vector3(-0.7f, 1 - alinear, 0.5f), //H
 
             //Rojo
-            new Vector3(0, 1.3f, 1f), //K
-            new Vector3(0.7f, 1.5f, 0.5f), //P
-            new Vector3(0.3f, 1.8f, 0.75f), //R
+            new Vector3(0, 1.3f - alinear, 1f), //K
+            new Vector3(0.7f, 1.5f - alinear, 0.5f), //P
+            new Vector3(0.3f, 1.8f - alinear, 0.75f), //R
 
             //Rojo
-            new Vector3(0, 1.3f, 1f), //K
-            new Vector3(-0.7f, 1.5f, 0.5f), //Q
-            new Vector3(-0.3f, 1.8f, 0.75f), //S
+            new Vector3(0, 1.3f - alinear, 1f), //K
+            new Vector3(-0.7f, 1.5f - alinear, 0.5f), //Q
+            new Vector3(-0.3f, 1.8f - alinear, 0.75f), //S
 
             //Rojo
-            new Vector3(0, 1.3f, 1f), //K
-            new Vector3(0.3f, 1.8f, 0.75f), //R
-            new Vector3(0, 2.4f, 0.25f), //T
+            new Vector3(0, 1.3f - alinear, 1f), //K
+            new Vector3(0.3f, 1.8f - alinear, 0.75f), //R
+            new Vector3(0, 2.4f - alinear, 0.25f), //T
 
             //Rojo
-            new Vector3(0, 1.3f, 1f), //K
-            new Vector3(-0.3f, 1.8f, 0.75f), //S
-            new Vector3(0, 2.4f, 0.25f), //T
+            new Vector3(0, 1.3f - alinear, 1f), //K
+            new Vector3(-0.3f, 1.8f - alinear, 0.75f), //S
+            new Vector3(0, 2.4f - alinear, 0.25f), //T
 
             //Rojo
-            new Vector3(-0.7f, 1.5f, 0.5f), //Q
-            new Vector3(-0.3f, 1.8f, 0.75f), //S
-            new Vector3(-0.7f, 2.2f, 0.5f), //V
+            new Vector3(-0.7f, 1.5f - alinear, 0.5f), //Q
+            new Vector3(-0.3f, 1.8f - alinear, 0.75f), //S
+            new Vector3(-0.7f, 2.2f - alinear, 0.5f), //V
 
             //rojo
-            new Vector3(0.7f, 1.5f, 0.5f), //P
-            new Vector3(0.3f, 1.8f, 0.75f), //R
-            new Vector3(0.7f, 2.2f, 0.5f), //U
+            new Vector3(0.7f, 1.5f - alinear, 0.5f), //P
+            new Vector3(0.3f, 1.8f - alinear, 0.75f), //R
+            new Vector3(0.7f, 2.2f - alinear, 0.5f), //U
 
             //Rojo
-            new Vector3(0.7f, 2.2f, 0.5f), //U
-            new Vector3(0.3f, 1.8f, 0.75f), //R
-            new Vector3(0, 2.4f, 0.25f), //T
+            new Vector3(0.7f, 2.2f - alinear, 0.5f), //U
+            new Vector3(0.3f, 1.8f - alinear, 0.75f), //R
+            new Vector3(0, 2.4f - alinear, 0.25f), //T
 
             //Rojo
-            new Vector3(-0.3f, 1.8f, 0.75f), //S
-            new Vector3(-0.7f, 2.2f, 0.5f), //V
-            new Vector3(0, 2.4f, 0.25f), //T
+            new Vector3(-0.3f, 1.8f - alinear, 0.75f), //S
+            new Vector3(-0.7f, 2.2f - alinear, 0.5f), //V
+            new Vector3(0, 2.4f - alinear, 0.25f), //T
 
             //Rojo
-            new Vector3(-0.7f, 1.5f, 0.5f), //Q
-            new Vector3(-1.4f, 1.8f, 0), //Z
-            new Vector3(-0.7f, 2.2f, 0.5f), //V
+            new Vector3(-0.7f, 1.5f - alinear, 0.5f), //Q
+            new Vector3(-1.4f, 1.8f - alinear, 0), //Z
+            new Vector3(-0.7f, 2.2f - alinear, 0.5f), //V
 
             //Rojo
-            new Vector3(0.7f, 1.5f, 0.5f), //P
-            new Vector3(1.4f, 1.8f, 0), //W
-            new Vector3(0.7f, 2.2f, 0.5f), //U
+            new Vector3(0.7f, 1.5f - alinear, 0.5f), //P
+            new Vector3(1.4f, 1.8f - alinear, 0), //W
+            new Vector3(0.7f, 2.2f - alinear, 0.5f), //U
 
             //Morado
-            new Vector3(0.7f, 1.5f, 0.5f), //P
-            new Vector3(1.4f, 1.8f, 0), //W
-            new Vector3(1.2f, 1.25f, 0), //O
+            new Vector3(0.7f, 1.5f - alinear, 0.5f), //P
+            new Vector3(1.4f, 1.8f - alinear, 0), //W
+            new Vector3(1.2f, 1.25f - alinear, 0), //O
 
             //Morado
-            new Vector3(-0.7f, 1.5f, 0.5f), //Q
-            new Vector3(-1.4f, 1.8f, 0), //Z
-            new Vector3(-1.2f, 1.25f, 0), //N
+            new Vector3(-0.7f, 1.5f - alinear, 0.5f), //Q
+            new Vector3(-1.4f, 1.8f - alinear, 0), //Z
+            new Vector3(-1.2f, 1.25f - alinear, 0), //N
 
             //Rojo
-            new Vector3(0.7f, 2.2f, 0.5f), //U
-            new Vector3(0, 2.4f, 0.25f), //T
-            new Vector3(0.4f, 2.8f, 0), //B1
+            new Vector3(0.7f, 2.2f - alinear, 0.5f), //U
+            new Vector3(0, 2.4f - alinear, 0.25f), //T
+            new Vector3(0.4f, 2.8f - alinear, 0), //B1
 
             //Rojo
-            new Vector3(-0.7f, 2.2f, 0.5f), //V
-            new Vector3(0, 2.4f, 0.25f), //T
-            new Vector3(-0.4f, 2.8f, 0), //A1
+            new Vector3(-0.7f, 2.2f - alinear, 0.5f), //V
+            new Vector3(0, 2.4f - alinear, 0.25f), //T
+            new Vector3(-0.4f, 2.8f - alinear, 0), //A1
 
             //Morado
-            new Vector3(0, 2.4f, 0.25f), //T
-            new Vector3(0.4f, 2.8f, 0), //B1
-            new Vector3(-0.4f, 2.8f, 0), //A1
+            new Vector3(0, 2.4f - alinear, 0.25f), //T
+            new Vector3(0.4f, 2.8f - alinear, 0), //B1
+            new Vector3(-0.4f, 2.8f - alinear, 0), //A1
 
             //Rojo
-            new Vector3(1.4f, 1.8f, 0), //W
-            new Vector3(0.7f, 2.2f, 0.5f), //U
-            new Vector3(1.4f, 2.8f, 0), //C1
+            new Vector3(1.4f, 1.8f - alinear, 0), //W
+            new Vector3(0.7f, 2.2f - alinear, 0.5f), //U
+            new Vector3(1.4f, 2.8f - alinear, 0), //C1
 
             //Rojo
-            new Vector3(-1.4f, 1.8f, 0), //Z
-            new Vector3(-0.7f, 2.2f, 0.5f), //V
-            new Vector3(-1.4f, 2.8f, 0), //D1
+            new Vector3(-1.4f, 1.8f - alinear, 0), //Z
+            new Vector3(-0.7f, 2.2f - alinear, 0.5f), //V
+            new Vector3(-1.4f, 2.8f - alinear, 0), //D1
 
             //Rojo
-            new Vector3(0.7f, 2.2f, 0.5f), //U
-            new Vector3(1.4f, 2.8f, 0), //C1
-            new Vector3(0.4f, 2.8f, 0), //B1
+            new Vector3(0.7f, 2.2f - alinear, 0.5f), //U
+            new Vector3(1.4f, 2.8f - alinear, 0), //C1
+            new Vector3(0.4f, 2.8f - alinear, 0), //B1
 
             //Rojo
-            new Vector3(-0.7f, 2.2f, 0.5f), //V
-            new Vector3(-1.4f, 2.8f, 0), //D1
-            new Vector3(-0.4f, 2.8f, 0), //A1
+            new Vector3(-0.7f, 2.2f - alinear, 0.5f), //V
+            new Vector3(-1.4f, 2.8f - alinear, 0), //D1
+            new Vector3(-0.4f, 2.8f - alinear, 0), //A1
 
             //Morado
-            new Vector3(1.4f, 2.8f, 0), //C1
-            new Vector3(1.4f, 1.8f, 0), //W
-            new Vector3(1.8f, 2.5f, -0.25f), //J1
+            new Vector3(1.4f, 2.8f - alinear, 0), //C1
+            new Vector3(1.4f, 1.8f - alinear, 0), //W
+            new Vector3(1.8f, 2.5f - alinear, -0.25f), //J1
 
             //Morado
-            new Vector3(-1.4f, 1.8f, 0), //Z
-            new Vector3(-1.4f, 2.8f, 0), //D1
-            new Vector3(-1.8f, 2.5f, -0.25f), //K1
+            new Vector3(-1.4f, 1.8f - alinear, 0), //Z
+            new Vector3(-1.4f, 2.8f - alinear, 0), //D1
+            new Vector3(-1.8f, 2.5f - alinear, -0.25f), //K1
 
             //Amarillo
-            new Vector3(1.4f, 2.8f, 0), //C1
-            new Vector3(1.6f, 3.1f, -0.25f), //M1
-            new Vector3(1.8f, 2.5f, -0.25f), //J1
+            new Vector3(1.4f, 2.8f - alinear, 0), //C1
+            new Vector3(1.6f, 3.1f - alinear, -0.25f), //M1
+            new Vector3(1.8f, 2.5f - alinear, -0.25f), //J1
 
             //Morado
-            new Vector3(-1.6f, 3.1f, -0.25f), //L1
-            new Vector3(-1.4f, 2.8f, 0), //D1
-            new Vector3(-1.8f, 2.5f, -0.25f), //K1
+            new Vector3(-1.6f, 3.1f - alinear, -0.25f), //L1
+            new Vector3(-1.4f, 2.8f - alinear, 0), //D1
+            new Vector3(-1.8f, 2.5f - alinear, -0.25f), //K1
 
             //Morado
-            new Vector3(1.4f, 1.8f, 0), //W
-            new Vector3(1.8f, 2.5f, -0.25f), //J1
-            new Vector3(1.6f, 1.5f, -0.25f), //N1
+            new Vector3(1.4f, 1.8f - alinear, 0), //W
+            new Vector3(1.8f, 2.5f - alinear, -0.25f), //J1
+            new Vector3(1.6f, 1.5f - alinear, -0.25f), //N1
 
             //Morado
-            new Vector3(-1.4f, 1.8f, 0), //Z
-            new Vector3(-1.8f, 2.5f, -0.25f), //K1
-            new Vector3(-1.6f, 1.5f, -0.25f), //O1
+            new Vector3(-1.4f, 1.8f - alinear, 0), //Z
+            new Vector3(-1.8f, 2.5f - alinear, -0.25f), //K1
+            new Vector3(-1.6f, 1.5f - alinear, -0.25f), //O1
 
             //Morado
-            new Vector3(1.4f, 1.8f, 0), //W
-            new Vector3(1.6f, 1.5f, -0.25f), //N1
-            new Vector3(1.2f, 1.25f, 0), //O
+            new Vector3(1.4f, 1.8f - alinear, 0), //W
+            new Vector3(1.6f, 1.5f - alinear, -0.25f), //N1
+            new Vector3(1.2f, 1.25f - alinear, 0), //O
 
             //Morado
-            new Vector3(-1.4f, 1.8f, 0), //Z
-            new Vector3(-1.6f, 1.5f, -0.25f), //O1
-            new Vector3(-1.2f, 1.25f, 0), //N
+            new Vector3(-1.4f, 1.8f - alinear, 0), //Z
+            new Vector3(-1.6f, 1.5f - alinear, -0.25f), //O1
+            new Vector3(-1.2f, 1.25f - alinear, 0), //N
 
             //Verde
-            new Vector3(1.6f, 1.5f, -0.25f), //N1
-            new Vector3(1.2f, 1.25f, 0), //O
-            new Vector3(1.4f, 1f, -0.25f), //P1
+            new Vector3(1.6f, 1.5f - alinear, -0.25f), //N1
+            new Vector3(1.2f, 1.25f - alinear, 0), //O
+            new Vector3(1.4f, 1f - alinear, -0.25f), //P1
 
             //verde
-            new Vector3(-1.6f, 1.5f, -0.25f), //O1
-            new Vector3(-1.2f, 1.25f, 0), //N
-            new Vector3(-1.4f, 1f, -0.25f), //Q1
+            new Vector3(-1.6f, 1.5f - alinear, -0.25f), //O1
+            new Vector3(-1.2f, 1.25f - alinear, 0), //N
+            new Vector3(-1.4f, 1f - alinear, -0.25f), //Q1
 
             //Verde
-            new Vector3(-1.2f, 1.25f, 0), //N
-            new Vector3(-1.4f, 1f, -0.25f), //Q1
-            new Vector3(-0.8f, 0.6f, 0), //L
+            new Vector3(-1.2f, 1.25f - alinear, 0), //N
+            new Vector3(-1.4f, 1f - alinear, -0.25f), //Q1
+            new Vector3(-0.8f, 0.6f - alinear, 0), //L
 
             //Verde
-            new Vector3(1.2f, 1.25f, 0), //O
-            new Vector3(1.4f, 1f, -0.25f), //P1
-            new Vector3(0.8f, 0.6f, 0), //M
+            new Vector3(1.2f, 1.25f - alinear, 0), //O
+            new Vector3(1.4f, 1f - alinear, -0.25f), //P1
+            new Vector3(0.8f, 0.6f - alinear, 0), //M
 
             //Morado
-            new Vector3(1.4f, 1f, -0.25f), //P1
-            new Vector3(0.8f, 0.6f, 0), //M
-            new Vector3(1f, 0.5f, -0.25f), //S1
+            new Vector3(1.4f, 1f - alinear, -0.25f), //P1
+            new Vector3(0.8f, 0.6f - alinear, 0), //M
+            new Vector3(1f, 0.5f - alinear, -0.25f), //S1
 
             //Morado
-            new Vector3(-1.4f, 1f, -0.25f), //Q1
-            new Vector3(-0.8f, 0.6f, 0), //L
-            new Vector3(-1f, 0.5f, -0.25f), //R1
+            new Vector3(-1.4f, 1f - alinear, -0.25f), //Q1
+            new Vector3(-0.8f, 0.6f - alinear, 0), //L
+            new Vector3(-1f, 0.5f - alinear, -0.25f), //R1
 
             //Morado 
-            new Vector3(-0.8f, 0.6f, 0), //L
-            new Vector3(-1f, 0.5f, -0.25f), //R1
-            new Vector3(-0.4f, 0.1f, 0), //F
+            new Vector3(-0.8f, 0.6f - alinear, 0), //L
+            new Vector3(-1f, 0.5f - alinear, -0.25f), //R1
+            new Vector3(-0.4f, 0.1f - alinear, 0), //F
 
             //Morado
-            new Vector3(0.8f, 0.6f, 0), //M
-            new Vector3(1f, 0.5f, -0.25f), //S1
-            new Vector3(0.4f, 0.1f, 0), //E
+            new Vector3(0.8f, 0.6f - alinear, 0), //M
+            new Vector3(1f, 0.5f - alinear, -0.25f), //S1
+            new Vector3(0.4f, 0.1f - alinear, 0), //E
 
             //Morado 
-            new Vector3(0.4f, 2.8f, 0), //B1
-            new Vector3(-0.4f, 2.8f, 0), //A1
-            new Vector3(0, 3f, 0), //G1
+            new Vector3(0.4f, 2.8f - alinear, 0), //B1
+            new Vector3(-0.4f, 2.8f - alinear, 0), //A1
+            new Vector3(0, 3f - alinear, 0), //G1
 
             //Morado
-            new Vector3(0, -0.1f, 0), //A
-            new Vector3(0, -0.1f, -0.25f), //Z1
-            new Vector3(0.4f, 0.1f, -0.25f), //W1
+            new Vector3(0, -0.1f - alinear, 0), //A
+            new Vector3(0, -0.1f - alinear, -0.25f), //Z1
+            new Vector3(0.4f, 0.1f - alinear, -0.25f), //W1
 
             //Morado
-            new Vector3(0, -0.1f, 0), //A
-            new Vector3(0.4f, 0.1f, -0.25f), //W1
-            new Vector3(0.4f, 0.1f, 0), //E
+            new Vector3(0, -0.1f - alinear, 0), //A
+            new Vector3(0.4f, 0.1f - alinear, -0.25f), //W1
+            new Vector3(0.4f, 0.1f - alinear, 0), //E
 
             //Morado
-            new Vector3(0, -0.1f, 0), //A
-            new Vector3(0, -0.1f, -0.25f), //Z1
-            new Vector3(-0.4f, 0.1f, 0), //F
+            new Vector3(0, -0.1f - alinear, 0), //A
+            new Vector3(0, -0.1f - alinear, -0.25f), //Z1
+            new Vector3(-0.4f, 0.1f - alinear, 0), //F
 
             //Morado
-            new Vector3(0, -0.1f, -0.25f), //Z1
-            new Vector3(-0.4f, 0.1f, 0), //F
-            new Vector3(-0.4f, 0.1f, -0.25f), //V1
+            new Vector3(0, -0.1f - alinear, -0.25f), //Z1
+            new Vector3(-0.4f, 0.1f - alinear, 0), //F
+            new Vector3(-0.4f, 0.1f - alinear, -0.25f), //V1
 
             //Morado
-            new Vector3(-0.4f, 0.1f, 0), //F
-            new Vector3(-0.4f, 0.1f, -0.25f), //V1
-            new Vector3(-1f, 0.5f, -0.25f), //R1
+            new Vector3(-0.4f, 0.1f - alinear, 0), //F
+            new Vector3(-0.4f, 0.1f - alinear, -0.25f), //V1
+            new Vector3(-1f, 0.5f - alinear, -0.25f), //R1
 
             //Morado
-            new Vector3(0.4f, 0.1f, -0.25f), //W1
-            new Vector3(0.4f, 0.1f, 0), //E
-            new Vector3(1f, 0.5f, -0.25f), //S1
+            new Vector3(0.4f, 0.1f - alinear, -0.25f), //W1
+            new Vector3(0.4f, 0.1f - alinear, 0), //E
+            new Vector3(1f, 0.5f - alinear, -0.25f), //S1
 
             //Morado
-            new Vector3(0, -0.1f, -0.25f), //Z1
-            new Vector3(-0.4f, 0.1f, -0.25f), //V1
-            new Vector3(0, -0.1f, -0.75f), //U1
+            new Vector3(0, -0.1f - alinear, -0.25f), //Z1
+            new Vector3(-0.4f, 0.1f - alinear, -0.25f), //V1
+            new Vector3(0, -0.1f - alinear, -0.75f), //U1
 
             //Morado
-            new Vector3(0, -0.1f, -0.25f), //Z1
-            new Vector3(0.4f, 0.1f, -0.25f), //W1
-            new Vector3(0, -0.1f, -0.75f), //U1
+            new Vector3(0, -0.1f - alinear, -0.25f), //Z1
+            new Vector3(0.4f, 0.1f - alinear, -0.25f), //W1
+            new Vector3(0, -0.1f - alinear, -0.75f), //U1
 
             //Morado
-            new Vector3(1.6f, 3.1f, -0.25f), //M1
-            new Vector3(1.2f, 3.4f, -0.75f), //A2
-            new Vector3(1.2f, 3.4f, -0.25f), //XD
+            new Vector3(1.6f, 3.1f - alinear, -0.25f), //M1
+            new Vector3(1.2f, 3.4f - alinear, -0.75f), //A2
+            new Vector3(1.2f, 3.4f - alinear, -0.25f), //XD
 
             //Morado
-            new Vector3(-1.6f, 3.1f, -0.25f), //L1
-            new Vector3(-1.2f, 3.4f, -0.75f), //B2
-            new Vector3(-1.2f, 3.4f, -0.25f), //XD2
+            new Vector3(-1.6f, 3.1f - alinear, -0.25f), //L1
+            new Vector3(-1.2f, 3.4f - alinear, -0.75f), //B2
+            new Vector3(-1.2f, 3.4f - alinear, -0.25f), //XD2
 
             //Morado
-            new Vector3(1.6f, 3.1f, -0.25f), //M1
-            new Vector3(1.4f, 2.8f, 0), //C1
-            new Vector3(1.2f, 3.4f, -0.25f), //XD
+            new Vector3(1.6f, 3.1f - alinear, -0.25f), //M1
+            new Vector3(1.4f, 2.8f - alinear, 0), //C1
+            new Vector3(1.2f, 3.4f - alinear, -0.25f), //XD
 
             //mORADO
-            new Vector3(1.4f, 2.8f, 0), //C1
-            new Vector3(1.2f, 3.4f, -0.25f), //XD
-            new Vector3(0.8f, 3.3f, -0.25f), //XD'nt
+            new Vector3(1.4f, 2.8f - alinear, 0), //C1
+            new Vector3(1.2f, 3.4f - alinear, -0.25f), //XD
+            new Vector3(0.8f, 3.3f - alinear, -0.25f), //XD'nt
 
             //mORADO
-            new Vector3(1.4f, 2.8f, 0), //C1
-            new Vector3(0.8f, 3.3f, -0.25f), //XD'nt
-            new Vector3(0.4f, 2.8f, 0), //B1
+            new Vector3(1.4f, 2.8f - alinear, 0), //C1
+            new Vector3(0.8f, 3.3f - alinear, -0.25f), //XD'nt
+            new Vector3(0.4f, 2.8f - alinear, 0), //B1
 
             //Morado
-            new Vector3(0.8f, 3.3f, -0.25f), //XD'nt
-            new Vector3(0.4f, 2.8f, 0), //B1
-            new Vector3(0, 3f, 0), //G1
+            new Vector3(0.8f, 3.3f - alinear, -0.25f), //XD'nt
+            new Vector3(0.4f, 2.8f - alinear, 0), //B1
+            new Vector3(0, 3f - alinear, 0), //G1
 
             //Morado
-            new Vector3(0.8f, 3.3f, -0.25f), //XD'nt
-            new Vector3(0, 3f, 0), //G1
-            new Vector3(0, 3f, -0.25f), //T1
+            new Vector3(0.8f, 3.3f - alinear, -0.25f), //XD'nt
+            new Vector3(0, 3f - alinear, 0), //G1
+            new Vector3(0, 3f - alinear, -0.25f), //T1
 
             //Morado
-            new Vector3(-1.6f, 3.1f, -0.25f), //L1
-            new Vector3(-1.4f, 2.8f, 0), //D1
-            new Vector3(-1.2f, 3.4f, -0.25f), //XD2
+            new Vector3(-1.6f, 3.1f - alinear, -0.25f), //L1
+            new Vector3(-1.4f, 2.8f - alinear, 0), //D1
+            new Vector3(-1.2f, 3.4f - alinear, -0.25f), //XD2
 
             //mORADO
-            new Vector3(-1.4f, 2.8f, 0), //D1
-            new Vector3(-1.2f, 3.4f, -0.25f), //XD2
-            new Vector3(-0.8f, 3.3f, -0.25f), //XD'nt2
+            new Vector3(-1.4f, 2.8f - alinear, 0), //D1
+            new Vector3(-1.2f, 3.4f - alinear, -0.25f), //XD2
+            new Vector3(-0.8f, 3.3f - alinear, -0.25f), //XD'nt2
 
             //mORADO
-            new Vector3(-1.4f, 2.8f, 0), //D1
-            new Vector3(-0.4f, 2.8f, 0), //A1
-            new Vector3(-0.8f, 3.3f, -0.25f), //XD'nt2
+            new Vector3(-1.4f, 2.8f - alinear, 0), //D1
+            new Vector3(-0.4f, 2.8f - alinear, 0), //A1
+            new Vector3(-0.8f, 3.3f - alinear, -0.25f), //XD'nt2
 
             //Morado
-            new Vector3(0, 3f, 0), //G1
-            new Vector3(-0.4f, 2.8f, 0), //A1
-            new Vector3(-0.8f, 3.3f, -0.25f), //XD'nt2
+            new Vector3(0, 3f - alinear , 0), //G1
+            new Vector3(-0.4f, 2.8f - alinear, 0), //A1
+            new Vector3(-0.8f, 3.3f - alinear, -0.25f), //XD'nt2
 
             //Morado
-            new Vector3(-0.8f, 3.3f, -0.25f), //XD'nt2
-            new Vector3(0, 3f, 0), //G1
-            new Vector3(0, 3f, -0.25f), //T1
+            new Vector3(-0.8f, 3.3f - alinear, -0.25f), //XD'nt2
+            new Vector3(0, 3f - alinear, 0), //G1
+            new Vector3(0, 3f - alinear, -0.25f), //T1
 
             //Morado
-            new Vector3(0.8f, 3.3f, -0.25f), //XD'nt
-            new Vector3(0.8f, 3.3f, -0.75f), //E2
-            new Vector3(0, 3f, -0.25f), //T1
+            new Vector3(0.8f, 3.3f - alinear, -0.25f), //XD'nt
+            new Vector3(0.8f, 3.3f - alinear, -0.75f), //E2
+            new Vector3(0, 3f - alinear, -0.25f), //T1
 
             //Morado
-            new Vector3(-0.8f, 3.3f, -0.25f), //XD'nt2
-            new Vector3(-0.8f, 3.3f, -0.75f), //F2
-            new Vector3(0, 3f, -0.25f), //T1
+            new Vector3(-0.8f, 3.3f - alinear, -0.25f), //XD'nt2
+            new Vector3(-0.8f, 3.3f - alinear, -0.75f), //F2
+            new Vector3(0, 3f - alinear, -0.25f), //T1
 
             //Morado
-            new Vector3(0.8f, 3.3f, -0.75f), //E2
-            new Vector3(0, 3f, -0.25f), //T1
-            new Vector3(0, 3f, -0.75f), //G2
+            new Vector3(0.8f, 3.3f - alinear, -0.75f), //E2
+            new Vector3(0, 3f - alinear, -0.25f), //T1
+            new Vector3(0, 3f - alinear, -0.75f), //G2
 
             //Morado
-            new Vector3(-0.8f, 3.3f, -0.75f), //F2
-            new Vector3(0, 3f, -0.25f), //T1
-            new Vector3(0, 3f, -0.75f), //G2
+            new Vector3(-0.8f, 3.3f - alinear, -0.75f), //F2
+            new Vector3(0, 3f - alinear, -0.25f), //T1
+            new Vector3(0, 3f - alinear, -0.75f), //G2
 
             //mORADO
-            new Vector3(0.8f, 3.3f, -0.75f), //E2
-            new Vector3(1.2f, 3.4f, -0.25f), //XD
-            new Vector3(0.8f, 3.3f, -0.25f), //XD'nt
+            new Vector3(0.8f, 3.3f - alinear, -0.75f), //E2
+            new Vector3(1.2f, 3.4f - alinear, -0.25f), //XD
+            new Vector3(0.8f, 3.3f - alinear, -0.25f), //XD'nt
 
             //mORADO
-            new Vector3(-0.8f, 3.3f, -0.75f), //F2
-            new Vector3(-1.2f, 3.4f, -0.25f), //XD2
-            new Vector3(-0.8f, 3.3f, -0.25f), //XD'nt2
+            new Vector3(-0.8f, 3.3f - alinear, -0.75f), //F2
+            new Vector3(-1.2f, 3.4f - alinear, -0.25f), //XD2
+            new Vector3(-0.8f, 3.3f - alinear, -0.25f), //XD'nt2
 
             //mORADO
-            new Vector3(0.8f, 3.3f, -0.75f), //E2
-            new Vector3(1.2f, 3.4f, -0.25f), //XD
-            new Vector3(1.2f, 3.4f, -0.75f), //A2
+            new Vector3(0.8f, 3.3f - alinear, -0.75f), //E2
+            new Vector3(1.2f, 3.4f - alinear, -0.25f), //XD
+            new Vector3(1.2f, 3.4f - alinear, -0.75f), //A2
 
             //mORADO
-            new Vector3(-0.8f, 3.3f, -0.75f), //D2
-            new Vector3(-1.2f, 3.4f, -0.25f), //XD2
-            new Vector3(-1.2f, 3.4f, -0.75f), //B2
+            new Vector3(-0.8f, 3.3f - alinear, -0.75f), //D2
+            new Vector3(-1.2f, 3.4f - alinear, -0.25f), //XD2
+            new Vector3(-1.2f, 3.4f - alinear, -0.75f), //B2
 
             //Morado
-            new Vector3(1.2f, 3.4f, -0.75f), //A2
-            new Vector3(1.6f, 3.1f, -0.25f), //M1
-            new Vector3(1.6f, 3.1f, -0.75f), //C2
+            new Vector3(1.2f, 3.4f - alinear, -0.75f), //A2
+            new Vector3(1.6f, 3.1f - alinear, -0.25f), //M1
+            new Vector3(1.6f, 3.1f - alinear, -0.75f), //C2
 
             //Morado
-            new Vector3(-1.2f, 3.4f, -0.75f), //B2
-            new Vector3(-1.6f, 3.1f, -0.25f), //L1
-            new Vector3(-1.6f, 3.1f, -0.75f), //D2
+            new Vector3(-1.2f, 3.4f - alinear, -0.75f), //B2
+            new Vector3(-1.6f, 3.1f - alinear, -0.25f), //L1
+            new Vector3(-1.6f, 3.1f - alinear, -0.75f), //D2
 
             //Morado
-            new Vector3(-1.6f, 3.1f, -0.25f), //L1
-            new Vector3(-1.6f, 3.1f, -0.75f), //D2
-            new Vector3(-1.8f, 2.5f, -0.75f), //I2
+            new Vector3(-1.6f, 3.1f - alinear, -0.25f), //L1
+            new Vector3(-1.6f, 3.1f - alinear, -0.75f), //D2
+            new Vector3(-1.8f, 2.5f - alinear, -0.75f), //I2
 
             //Morado
-            new Vector3(1.6f, 3.1f, -0.25f), //M1
-            new Vector3(1.6f, 3.1f, -0.75f), //C2
-            new Vector3(1.8f, 2.5f, -0.75f), //H2
+            new Vector3(1.6f, 3.1f - alinear, -0.25f), //M1
+            new Vector3(1.6f, 3.1f - alinear, -0.75f), //C2
+            new Vector3(1.8f, 2.5f - alinear, -0.75f), //H2
 
             //Morado
-            new Vector3(1.6f, 3.1f, -0.25f), //M1
-            new Vector3(1.8f, 2.5f, -0.75f), //H2
-            new Vector3(1.8f, 2.5f, -0.25f), //J1
+            new Vector3(1.6f, 3.1f - alinear, -0.25f), //M1
+            new Vector3(1.8f, 2.5f - alinear, -0.75f), //H2
+            new Vector3(1.8f, 2.5f - alinear, -0.25f), //J1
 
             //Morado
-            new Vector3(-1.6f, 3.1f, -0.25f), //L1
-            new Vector3(-1.8f, 2.5f, -0.75f), //I2
-            new Vector3(-1.8f, 2.5f, -0.25f), //K1
+            new Vector3(-1.6f, 3.1f - alinear, -0.25f), //L1
+            new Vector3(-1.8f, 2.5f - alinear, -0.75f), //I2
+            new Vector3(-1.8f, 2.5f - alinear, -0.25f), //K1
 
             //Morado
-            new Vector3(1.8f, 2.5f, -0.75f), //H2
-            new Vector3(1.8f, 2.5f, -0.25f), //J1
-            new Vector3(1.6f, 1.5f, -0.75f), //J2
+            new Vector3(1.8f, 2.5f - alinear, -0.75f), //H2
+            new Vector3(1.8f, 2.5f - alinear, -0.25f), //J1
+            new Vector3(1.6f, 1.5f - alinear, -0.75f), //J2
 
             //Morado
-            new Vector3(-1.8f, 2.5f, -0.75f), //I2
-            new Vector3(-1.8f, 2.5f, -0.25f), //k1
-            new Vector3(-1.6f, 1.5f, -0.75f), //K2
+            new Vector3(-1.8f, 2.5f - alinear, -0.75f), //I2
+            new Vector3(-1.8f, 2.5f - alinear, -0.25f), //k1
+            new Vector3(-1.6f, 1.5f - alinear, -0.75f), //K2
 
             //Morado
-            new Vector3(1.8f, 2.5f, -0.25f), //J1
-            new Vector3(1.6f, 1.5f, -0.75f), //J2
-            new Vector3(1.6f, 1.5f, -0.25f), //N1
+            new Vector3(1.8f, 2.5f - alinear, -0.25f), //J1
+            new Vector3(1.6f, 1.5f - alinear, -0.75f), //J2
+            new Vector3(1.6f, 1.5f - alinear, -0.25f), //N1
 
             //Morado
-            new Vector3(-1.8f, 2.5f, -0.25f), //k1
-            new Vector3(-1.6f, 1.5f, -0.75f), //K2
-            new Vector3(-1.6f, 1.5f, -0.25f), //O1
+            new Vector3(-1.8f, 2.5f - alinear, -0.25f), //k1
+            new Vector3(-1.6f, 1.5f - alinear, -0.75f), //K2
+            new Vector3(-1.6f, 1.5f - alinear, -0.25f), //O1
 
             //Morado
-            new Vector3(1.6f, 1.5f, -0.75f), //J2
-            new Vector3(1.6f, 1.5f, -0.25f), //N1
-            new Vector3(1.4f, 1, -0.75f), //M2
+            new Vector3(1.6f, 1.5f - alinear, -0.75f), //J2
+            new Vector3(1.6f, 1.5f - alinear, -0.25f), //N1
+            new Vector3(1.4f, 1 - alinear, -0.75f), //M2
 
             //Morado
-            new Vector3(-1.6f, 1.5f, -0.75f), //K2
-            new Vector3(-1.6f, 1.5f, -0.25f), //O1
-            new Vector3(-1.4f, 1, -0.75f), //L2
+            new Vector3(-1.6f, 1.5f - alinear, -0.75f), //K2
+            new Vector3(-1.6f, 1.5f - alinear, -0.25f), //O1
+            new Vector3(-1.4f, 1 - alinear, -0.75f), //L2
 
             //Morado
-            new Vector3(1.4f, 1, -0.75f), //M2
-            new Vector3(1.4f, 1f, -0.25f), //P1
-            new Vector3(1.6f, 1.5f, -0.25f), //N1
+            new Vector3(1.4f, 1 - alinear, -0.75f), //M2
+            new Vector3(1.4f, 1f - alinear, -0.25f), //P1
+            new Vector3(1.6f, 1.5f - alinear, -0.25f), //N1
 
             //Morado
-            new Vector3(-1.4f, 1, -0.75f), //L2
-            new Vector3(-1.4f, 1f, -0.25f), //Q1
-            new Vector3(-1.6f, 1.5f, -0.25f), //O1
+            new Vector3(-1.4f, 1 - alinear, -0.75f), //L2
+            new Vector3(-1.4f, 1f - alinear, -0.25f), //Q1
+            new Vector3(-1.6f, 1.5f - alinear, -0.25f), //O1
 
             //Morado
-            new Vector3(1.4f, 1, -0.75f), //M2
-            new Vector3(1.4f, 1f, -0.25f), //P1
-            new Vector3(1f, 0.5f, -0.25f), //S1
+            new Vector3(1.4f, 1 - alinear, -0.75f), //M2
+            new Vector3(1.4f, 1f - alinear, -0.25f), //P1
+            new Vector3(1f, 0.5f - alinear, -0.25f), //S1
 
             //Morado
-            new Vector3(-1.4f, 1, -0.75f), //L2
-            new Vector3(-1.4f, 1f, -0.25f), //Q1
-            new Vector3(-1f, 0.5f, -0.25f), //R1
+            new Vector3(-1.4f, 1 - alinear, -0.75f), //L2
+            new Vector3(-1.4f, 1f - alinear, -0.25f), //Q1
+            new Vector3(-1f, 0.5f - alinear, -0.25f), //R1
 
             //Morado
-            new Vector3(1.4f, 1, -0.75f), //M2
-            new Vector3(1f, 0.5f, -0.25f), //S1
-            new Vector3(1f, 0.5f, -0.75f), //O2
+            new Vector3(1.4f, 1 - alinear, -0.75f), //M2
+            new Vector3(1f, 0.5f - alinear, -0.25f), //S1
+            new Vector3(1f, 0.5f - alinear, -0.75f), //O2
 
             //Morado
-            new Vector3(-1.4f, 1, -0.75f), //L2
-            new Vector3(-1f, 0.5f, -0.25f), //R1
-            new Vector3(-1f, 0.5f, -0.75f), //N2
+            new Vector3(-1.4f, 1 - alinear, -0.75f), //L2
+            new Vector3(-1f, 0.5f - alinear, -0.25f), //R1
+            new Vector3(-1f, 0.5f - alinear, -0.75f), //N2
 
             //Morado
-            new Vector3(1f, 0.5f, -0.25f), //S1
-            new Vector3(1f, 0.5f, -0.75f), //O2
-            new Vector3(0.4f, 0.1f, -0.25f), //W1
+            new Vector3(1f, 0.5f - alinear, -0.25f), //S1
+            new Vector3(1f, 0.5f - alinear, -0.75f), //O2
+            new Vector3(0.4f, 0.1f - alinear, -0.25f), //W1
 
             //Morado
-            new Vector3(-1f, 0.5f, -0.25f), //R1
-            new Vector3(-1f, 0.5f, -0.75f), //N2
-            new Vector3(-0.4f, 0.1f, -0.25f), //V1
+            new Vector3(-1f, 0.5f - alinear, -0.25f), //R1
+            new Vector3(-1f, 0.5f - alinear, -0.75f), //N2
+            new Vector3(-0.4f, 0.1f - alinear, -0.25f), //V1
 
             //Morado
-            new Vector3(1f, 0.5f, -0.75f), //O2
-            new Vector3(0.4f, 0.1f, -0.25f), //W1
-            new Vector3(0.4f, 0.1f, -0.75f), //Q2
+            new Vector3(1f, 0.5f - alinear, -0.75f), //O2
+            new Vector3(0.4f, 0.1f - alinear, -0.25f), //W1
+            new Vector3(0.4f, 0.1f - alinear, -0.75f), //Q2
 
             //Morado
-            new Vector3(-1f, 0.5f, -0.75f), //N2
-            new Vector3(-0.4f, 0.1f, -0.25f), //V1
-            new Vector3(-0.4f, 0.1f, -0.75f), //P2
+            new Vector3(-1f, 0.5f - alinear, -0.75f), //N2
+            new Vector3(-0.4f, 0.1f - alinear, -0.25f), //V1
+            new Vector3(-0.4f, 0.1f - alinear, -0.75f), //P2
 
             //Morado
-            new Vector3(0.4f, 0.1f, -0.25f), //W1
-            new Vector3(0.4f, 0.1f, -0.75f), //Q2
-            new Vector3(0, -0.1f, -0.75f), //U1
+            new Vector3(0.4f, 0.1f - alinear, -0.25f), //W1
+            new Vector3(0.4f, 0.1f - alinear, -0.75f), //Q2
+            new Vector3(0, -0.1f - alinear, -0.75f), //U1
 
             //Morado
-            new Vector3(-0.4f, 0.1f, -0.25f), //V1
-            new Vector3(-0.4f, 0.1f, -0.75f), //P2
-            new Vector3(0, -0.1f, -0.75f), //U1
+            new Vector3(-0.4f, 0.1f - alinear, -0.25f), //V1
+            new Vector3(-0.4f, 0.1f - alinear, -0.75f), //P2
+            new Vector3(0, -0.1f - alinear, -0.75f), //U1
 
             //Negro
-            new Vector3(0.4f, 0.1f, -0.75f), //Q2
-            new Vector3(0, -0.1f, -0.75f), //U1
-            new Vector3(0, 1, -0.75f), //R2
+            new Vector3(0.4f, 0.1f - alinear, -0.75f), //Q2
+            new Vector3(0, -0.1f - alinear, -0.75f), //U1
+            new Vector3(0, 1 - alinear, -0.75f), //R2
 
             //Negro
-            new Vector3(-0.4f, 0.1f, -0.75f), //P2
-            new Vector3(0, -0.1f, -0.75f), //U1
-            new Vector3(0, 1, -0.75f), //R2
+            new Vector3(-0.4f, 0.1f - alinear, -0.75f), //P2
+            new Vector3(0, -0.1f - alinear, -0.75f), //U1
+            new Vector3(0, 1 - alinear, -0.75f), //R2
 
             //Negro
-            new Vector3(0.4f, 0.1f, -0.75f), //Q2
-            new Vector3(0, 1, -0.75f), //R2
-            new Vector3(0.75f, 1, -0.75f), //S2
+            new Vector3(0.4f, 0.1f - alinear, -0.75f), //Q2
+            new Vector3(0, 1 - alinear, -0.75f), //R2
+            new Vector3(0.75f, 1 - alinear, -0.75f), //S2
 
             //Negro
-            new Vector3(-0.4f, 0.1f, -0.75f), //P2
-            new Vector3(0, 1, -0.75f), //R2
-            new Vector3(-0.75f, 1, -0.75f), //T2
+            new Vector3(-0.4f, 0.1f - alinear, -0.75f), //P2
+            new Vector3(0, 1 - alinear, -0.75f), //R2
+            new Vector3(-0.75f, 1 - alinear, -0.75f), //T2
 
             //Negro
-            new Vector3(0.4f, 0.1f, -0.75f), //Q2
-            new Vector3(0.75f, 1, -0.75f), //S2
-            new Vector3(1f, 0.5f, -0.75f), //O2
+            new Vector3(0.4f, 0.1f - alinear, -0.75f), //Q2
+            new Vector3(0.75f, 1 - alinear, -0.75f), //S2
+            new Vector3(1f, 0.5f - alinear, -0.75f), //O2
 
             //Negro
-            new Vector3(-0.4f, 0.1f, -0.75f), //P2
-            new Vector3(-0.75f, 1, -0.75f), //T2
-            new Vector3(-1f, 0.5f, -0.75f), //N2
+            new Vector3(-0.4f, 0.1f - alinear, -0.75f), //P2
+            new Vector3(-0.75f, 1 - alinear, -0.75f), //T2
+            new Vector3(-1f, 0.5f - alinear, -0.75f), //N2
 
             //Negro
-            new Vector3(0.75f, 1, -0.75f), //S2
-            new Vector3(1f, 0.5f, -0.75f), //O2
-            new Vector3(1.4f, 1, -0.75f), //M2
+            new Vector3(0.75f, 1 - alinear, -0.75f), //S2
+            new Vector3(1f, 0.5f - alinear, -0.75f), //O2
+            new Vector3(1.4f, 1 - alinear, -0.75f), //M2
 
             //Negro
-            new Vector3(-0.75f, 1, -0.75f), //T2
-            new Vector3(-1f, 0.5f, -0.75f), //N2
-            new Vector3(-1.4f, 1, -0.75f), //L2
+            new Vector3(-0.75f, 1 - alinear, -0.75f), //T2
+            new Vector3(-1f, 0.5f - alinear, -0.75f), //N2
+            new Vector3(-1.4f, 1 - alinear, -0.75f), //L2
 
             //Negro
-            new Vector3(-0.75f, 1, -0.75f), //T2
-            new Vector3(-1.4f, 1, -0.75f), //L2
-            new Vector3(-0.75f, 2, -0.75f), //U2
+            new Vector3(-0.75f, 1 - alinear, -0.75f), //T2
+            new Vector3(-1.4f, 1 - alinear, -0.75f), //L2
+            new Vector3(-0.75f, 2 - alinear, -0.75f), //U2
 
             //Negro
-            new Vector3(-0.75f, 1, -0.75f), //T2
-            new Vector3(0, 1, -0.75f), //R2
-            new Vector3(0, 2, -0.75f), //W2
+            new Vector3(-0.75f, 1 - alinear, -0.75f), //T2
+            new Vector3(0, 1 - alinear, -0.75f), //R2
+            new Vector3(0, 2 - alinear, -0.75f), //W2
 
             //Negro
-            new Vector3(0.75f, 1, -0.75f), //S2
-            new Vector3(0, 1, -0.75f), //R2
-            new Vector3(0.75f, 2, -0.75f), //V2
+            new Vector3(0.75f, 1 - alinear, -0.75f), //S2
+            new Vector3(0, 1 - alinear, -0.75f), //R2
+            new Vector3(0.75f, 2 - alinear, -0.75f), //V2
 
             //Negro
-            new Vector3(-1.4f, 1, -0.75f), //L2
-            new Vector3(-0.75f, 2, -0.75f), //U2
-            new Vector3(-1.6f, 1.5f, -0.75f), //K2
+            new Vector3(-1.4f, 1 - alinear, -0.75f), //L2
+            new Vector3(-0.75f, 2 - alinear, -0.75f), //U2
+            new Vector3(-1.6f, 1.5f - alinear, -0.75f), //K2
 
             //Negro
-            new Vector3(-0.75f, 1, -0.75f), //T2
-            new Vector3(-0.75f, 2, -0.75f), //U2
-            new Vector3(0, 2, -0.75f), //W2
+            new Vector3(-0.75f, 1 - alinear, -0.75f), //T2
+            new Vector3(-0.75f, 2 - alinear, -0.75f), //U2
+            new Vector3(0, 2 - alinear, -0.75f), //W2
 
             //Negro
-            new Vector3(0, 1, -0.75f), //R2
-            new Vector3(0, 2, -0.75f), //W2
-            new Vector3(0.75f, 2, -0.75f), //V2
+            new Vector3(0, 1 - alinear, -0.75f), //R2
+            new Vector3(0, 2 - alinear, -0.75f), //W2
+            new Vector3(0.75f, 2 - alinear, -0.75f), //V2
 
             //Negro
-            new Vector3(0.75f, 1, -0.75f), //S2
-            new Vector3(1.4f, 1, -0.75f), //M2
-            new Vector3(0.75f, 2, -0.75f), //V2
+            new Vector3(0.75f, 1 - alinear, -0.75f), //S2
+            new Vector3(1.4f, 1 - alinear, -0.75f), //M2
+            new Vector3(0.75f, 2 - alinear, -0.75f), //V2
 
             //Negro
-            new Vector3(1.4f, 1, -0.75f), //M2
-            new Vector3(0.75f, 2, -0.75f), //V2
-            new Vector3(1.6f, 1.5f, -0.75f), //J2
+            new Vector3(1.4f, 1 - alinear, -0.75f), //M2
+            new Vector3(0.75f, 2 - alinear, -0.75f), //V2
+            new Vector3(1.6f, 1.5f - alinear, -0.75f), //J2
 
             //Negro
-            new Vector3(-0.75f, 2, -0.75f), //U2
-            new Vector3(-1.6f, 1.5f, -0.75f), //K2
-            new Vector3(-1.8f, 2.5f, -0.75f), //I2
+            new Vector3(-0.75f, 2 - alinear, -0.75f), //U2
+            new Vector3(-1.6f, 1.5f - alinear, -0.75f), //K2
+            new Vector3(-1.8f, 2.5f - alinear, -0.75f), //I2
 
             //Negro
-            new Vector3(0.75f, 2, -0.75f), //V2
-            new Vector3(1.6f, 1.5f, -0.75f), //J2
-            new Vector3(1.8f, 2.5f, -0.75f), //H2
+            new Vector3(0.75f, 2 - alinear, -0.75f), //V2
+            new Vector3(1.6f, 1.5f - alinear, -0.75f), //J2
+            new Vector3(1.8f, 2.5f - alinear, -0.75f), //H2
 
             //Negro
-            new Vector3(-1.2f, 3.4f, -0.75f), //B2
-            new Vector3(-1.6f, 3.1f, -0.75f), //D2
-            new Vector3(-0.75f, 3f, -0.75f), //A3
+            new Vector3(-1.2f, 3.4f - alinear, -0.75f), //B2
+            new Vector3(-1.6f, 3.1f - alinear, -0.75f), //D2
+            new Vector3(-0.75f, 3f - alinear, -0.75f), //A3
 
             //Negro
-            new Vector3(-1.2f, 3.4f, -0.75f), //B2
-            new Vector3(-0.75f, 3f, -0.75f), //A3
-            new Vector3(-0.8f, 3.3f, -0.75f), //F2
+            new Vector3(-1.2f, 3.4f - alinear, -0.75f), //B2
+            new Vector3(-0.75f, 3f - alinear, -0.75f), //A3
+            new Vector3(-0.8f, 3.3f - alinear, -0.75f), //F2
 
             //Negro
-            new Vector3(-0.75f, 3f, -0.75f), //A3
-            new Vector3(-0.8f, 3.3f, -0.75f), //F2
-            new Vector3(0, 3f, -0.75f), //G2
+            new Vector3(-0.75f, 3f - alinear, -0.75f), //A3
+            new Vector3(-0.8f, 3.3f - alinear, -0.75f), //F2
+            new Vector3(0, 3f - alinear, -0.75f), //G2
 
             //Negro
-            new Vector3(0, 3f, -0.75f), //G2
-            new Vector3(0.75f, 3f, -0.75f), //Z3
-            new Vector3(0.8f, 3.3f, -0.75f), //E2
+            new Vector3(0, 3f - alinear, -0.75f), //G2
+            new Vector3(0.75f, 3f - alinear, -0.75f), //Z3
+            new Vector3(0.8f, 3.3f - alinear, -0.75f), //E2
 
             //Negro
-            new Vector3(0.75f, 3f, -0.75f), //Z3
-            new Vector3(0.8f, 3.3f, -0.75f), //E2
-            new Vector3(1.2f, 3.4f, -0.75f), //A2
+            new Vector3(0.75f, 3f - alinear, -0.75f), //Z3
+            new Vector3(0.8f, 3.3f - alinear, -0.75f), //E2
+            new Vector3(1.2f, 3.4f - alinear, -0.75f), //A2
 
             //Negro
-            new Vector3(0.75f, 3f, -0.75f), //Z3
-            new Vector3(1.2f, 3.4f, -0.75f), //A2
-            new Vector3(1.6f, 3.1f, -0.75f), //C2
+            new Vector3(0.75f, 3f - alinear, -0.75f), //Z3
+            new Vector3(1.2f, 3.4f - alinear, -0.75f), //A2
+            new Vector3(1.6f, 3.1f - alinear, -0.75f), //C2
 
             //Negro
-            new Vector3(-0.75f, 3f, -0.75f), //A3
-            new Vector3(-0.75f, 2, -0.75f), //U2
-            new Vector3(0, 2, -0.75f), //W2
+            new Vector3(-0.75f, 3f - alinear, -0.75f), //A3
+            new Vector3(-0.75f, 2 - alinear, -0.75f), //U2
+            new Vector3(0, 2 - alinear, -0.75f), //W2
 
             //Negro
-            new Vector3(0, 2, -0.75f), //W2
-            new Vector3(0.75f, 2, -0.75f), //V2
-            new Vector3(0.75f, 3f, -0.75f), //Z3
+            new Vector3(0, 2 - alinear, -0.75f), //W2
+            new Vector3(0.75f, 2 - alinear, -0.75f), //V2
+            new Vector3(0.75f, 3f - alinear, -0.75f), //Z3
 
             //Negro
-            new Vector3(-0.75f, 3f, -0.75f), //A3
-            new Vector3(0, 3f, -0.75f), //G2
-            new Vector3(0, 2, -0.75f), //W2
+            new Vector3(-0.75f, 3f - alinear, -0.75f), //A3
+            new Vector3(0, 3f - alinear, -0.75f), //G2
+            new Vector3(0, 2 - alinear, -0.75f), //W2
 
             //Negro
-            new Vector3(0.75f, 3f, -0.75f), //Z3
-            new Vector3(0, 3f, -0.75f), //G2
-            new Vector3(0, 2, -0.75f), //W2
+            new Vector3(0.75f, 3f - alinear, -0.75f), //Z3
+            new Vector3(0, 3f - alinear, -0.75f), //G2
+            new Vector3(0, 2 - alinear, -0.75f), //W2
 
             //Negro
-            new Vector3(0.75f, 2, -0.75f), //V2
-            new Vector3(0.75f, 3f, -0.75f), //Z3
-            new Vector3(1.8f, 2.5f, -0.75f), //H2
+            new Vector3(0.75f, 2 - alinear, -0.75f), //V2
+            new Vector3(0.75f, 3f - alinear, -0.75f), //Z3
+            new Vector3(1.8f, 2.5f - alinear, -0.75f), //H2
 
             //Negro
-            new Vector3(0.75f, 3f, -0.75f), //Z3
-            new Vector3(1.8f, 2.5f, -0.75f), //H2
-            new Vector3(1.6f, 3.1f, -0.75f), //C2
+            new Vector3(0.75f, 3f - alinear, -0.75f), //Z3
+            new Vector3(1.8f, 2.5f - alinear, -0.75f), //H2
+            new Vector3(1.6f, 3.1f - alinear, -0.75f), //C2
 
             //Negro
-            new Vector3(-0.75f, 2, -0.75f), //U2
-            new Vector3(-1.6f, 3.1f, -0.75f), //D2
-            new Vector3(-0.75f, 3f, -0.75f), //A3
+            new Vector3(-0.75f, 2 - alinear, -0.75f), //U2
+            new Vector3(-1.6f, 3.1f - alinear, -0.75f), //D2
+            new Vector3(-0.75f, 3f - alinear, -0.75f), //A3
 
             //Negro
-            new Vector3(-0.75f, 2, -0.75f), //U2
-            new Vector3(-1.6f, 3.1f, -0.75f), //D2
-            new Vector3(-1.8f, 2.5f, -0.75f), //I2
+            new Vector3(-0.75f, 2 - alinear, -0.75f), //U2
+            new Vector3(-1.6f, 3.1f - alinear, -0.75f), //D2
+            new Vector3(-1.8f, 2.5f - alinear, -0.75f), //I2
+
+            //Amarillo
+            new Vector3(1.2f, 3.4f - alinear, -0.25f), //XD
+            new Vector3(0.8f, 3.3f - alinear, -0.25f), //XD'nt
+            new Vector3(1.2f, 4.5f - alinear, -0.5f), //C3
+
+            //Amarillo
+            new Vector3(1.6f, 3.1f - alinear, -0.25f), //M1
+            new Vector3(1.2f, 3.4f - alinear, -0.25f), //XD
+            new Vector3(1.2f, 4.5f - alinear, -0.5f), //C3
+
+            //Amarillo
+            new Vector3(1.6f, 3.1f - alinear, -0.25f), //M1
+            new Vector3(1.6f, 3.1f - alinear, -0.75f), //C2
+            new Vector3(1.2f, 4.5f - alinear, -0.5f), //C3
+
+            //Amarillo
+            new Vector3(1.6f, 3.1f - alinear, -0.75f), //C2
+            new Vector3(1.2f, 3.4f - alinear, -0.75f), //A2
+            new Vector3(1.2f, 4.5f - alinear, -0.5f), //C3
+
+            //Amarillo
+            new Vector3(0.8f, 3.3f - alinear, -0.75f), //E2
+            new Vector3(1.2f, 3.4f - alinear, -0.75f), //A2
+            new Vector3(1.2f, 4.5f - alinear, -0.5f), //C3
+
+            //Amarillo
+            new Vector3(0.8f, 3.3f - alinear, -0.75f), //E2
+            new Vector3(0.8f, 3.3f - alinear, -0.25f), //XD'nt
+            new Vector3(1.2f, 4.5f - alinear, -0.5f), //C3
+
+            //Amarillo
+            new Vector3(-1.2f, 3.4f - alinear, -0.25f), //XD2
+            new Vector3(-0.8f, 3.3f - alinear, -0.25f), //XD'nt2
+            new Vector3(-1.2f, 4.5f - alinear, -0.5f), //B3
+
+            //Amarillo
+            new Vector3(-1.6f, 3.1f - alinear, -0.25f), //L1
+            new Vector3(-1.2f, 3.4f - alinear, -0.25f), //XD2
+            new Vector3(-1.2f, 4.5f - alinear, -0.5f), //B3
+
+            //amarillo
+            new Vector3(-1.6f, 3.1f - alinear, -0.75f), //D2
+            new Vector3(-1.2f, 4.5f - alinear, -0.5f), //B3
+            new Vector3(-1.6f, 3.1f - alinear, -0.25f), //L1
+
+            //Amarillo
+            new Vector3(-1.6f, 3.1f - alinear, -0.75f), //D2
+            new Vector3(-1.2f, 3.3f - alinear, -0.75f), //B2
+            new Vector3(-1.2f, 4.5f - alinear, -0.5f), //B3
+
+            //Amarillo
+            new Vector3(-1.2f, 3.3f - alinear, -0.75f), //B2
+            new Vector3(-0.8f, 3.1f - alinear, -0.75f), //F2
+            new Vector3(-1.2f, 4.5f - alinear, -0.5f), //B3
+
+            //Amarillo
+            new Vector3(-0.8f, 3.1f - alinear, -0.75f), //F2
+            new Vector3(-1.2f, 4.5f - alinear, -0.5f), //B3
+            new Vector3(-1.2f, 3.4f - alinear, -0.25f), //XD2
         };
 
 
@@ -888,10 +949,22 @@ public class Examen : MonoBehaviour
             414, 415, 416,
             418, 417, 419,
             420, 421, 422,
-            424, 423, 425
+            424, 423, 425,
+            427, 426, 428,
+            430, 429, 431,
+            432, 433, 434,
+            435, 436, 437,
+            439, 438, 440,
+            441, 442, 443,
+            444, 445, 446,
+            447, 448, 449,
+            451, 450, 452,
+            454, 453, 455,
+            457, 456, 458,
+            459, 460, 461
         };
 
-        Vector2[] uvs =
+        /*Vector2[] uvs =
         {
             new Vector2(0, 0.66f),
             new Vector2(0.25f, 0.66f),
@@ -912,8 +985,9 @@ public class Examen : MonoBehaviour
             new Vector2(0.25f, 0),
             new Vector2(0.5f, 0),
         };
+        */
         meshFilter.mesh.triangles = triangles;
-        meshFilter.mesh.uv = uvs;
+        //meshFilter.mesh.uv = uvs;
         meshFilter.mesh.Optimize();
         meshFilter.mesh.RecalculateNormals();
 
