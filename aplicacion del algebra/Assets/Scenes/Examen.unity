@@ -219,7 +219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &434068584
 Transform:
   m_ObjectHideFlags: 0
@@ -788,8 +788,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a4750f558118b4290c5db454bd076b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: 5c9dcfaa55c93764b8280f6c85e27203, type: 2}
-  texture: {fileID: 2800000, guid: 41bc654f38aa5024ab5d69bb26a60920, type: 3}
+  material: {fileID: 2100000, guid: 6a7b1fea96efcc541855ffd19d55e3ed, type: 2}
+  texture: {fileID: 2800000, guid: 3fd2126bd679a1846904fd5c4dc73202, type: 3}
 --- !u!4 &1403382987
 Transform:
   m_ObjectHideFlags: 0
@@ -811,7 +811,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403382985}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca26f958053f4b14b8b431d4542909a5, type: 3}
   m_Name: 
@@ -917,7 +917,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: abe7a2661e38c97478db50fc8335f33f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0

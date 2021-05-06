@@ -33,94 +33,94 @@ public class Examen : MonoBehaviour
         vertex = new[]
         {
             //Rojo
-            new Vector3(0, -0.1f - alinear, 0), //A
-            new Vector3(0.25f, 0.5f - alinear, 0.5f), //B
-            new Vector3(0, 0.8f - alinear, 0.75f), //D
+            new Vector3(0, -0.1f - alinear, 0), //A -
+            new Vector3(0.25f, 0.5f - alinear, 0.5f), //B -
+            new Vector3(0, 0.8f - alinear, 0.75f), //D -
 
             //Rojo
-            new Vector3(0, -0.1f - alinear, 0), //A
-            new Vector3(0, 0.8f - alinear, 0.75f), //D
-            new Vector3(-0.25f , 0.5f - alinear, 0.5f), //C
+            new Vector3(0, -0.1f - alinear, 0), //A -
+            new Vector3(0, 0.8f - alinear, 0.75f), //D -
+            new Vector3(-0.25f , 0.5f - alinear, 0.5f), //C -
 
             //Rojo
-            new Vector3(0, 0.8f - alinear, 0.75f), //D
-            new Vector3(-0.25f, 0.5f - alinear, 0.5f), //C
-            new Vector3(-0.7f, 1 - alinear, 0.5f), //H
+            new Vector3(0, 0.8f - alinear, 0.75f), //D -
+            new Vector3(-0.25f, 0.5f - alinear, 0.5f), //C -
+            new Vector3(-0.7f, 1 - alinear, 0.5f), //H -
 
             //Rojo
-            new Vector3(0.25f, 0.5f - alinear, 0.5f), //B
-            new Vector3(0, 0.8f - alinear, 0.75f), //D
-            new Vector3(0.7f, 1 - alinear, 0.5f), //G
+            new Vector3(0.25f, 0.5f - alinear, 0.5f), //B -
+            new Vector3(0, 0.8f - alinear, 0.75f), //D -
+            new Vector3(0.7f, 1 - alinear, 0.5f), //G -
 
             //Morado
-            new Vector3(0.25f, 0.5f - alinear, 0.5f), //B
-            new Vector3(0.7f, 1 - alinear, 0.5f), //G
-            new Vector3(0.4f, 0.1f - alinear, 0), //E
+            new Vector3(0.25f, 0.5f - alinear, 0.5f), //B -
+            new Vector3(0.7f, 1 - alinear, 0.5f), //G -
+            new Vector3(0.4f, 0.1f - alinear, 0), //E -
 
             //Morado
-            new Vector3(-0.25f, 0.5f - alinear, 0.5f), //C
-            new Vector3(-0.7f, 1 - alinear, 0.5f), //H
-            new Vector3(-0.4f, 0.1f - alinear, 0), //F
+            new Vector3(-0.25f, 0.5f - alinear, 0.5f), //C -
+            new Vector3(-0.7f, 1 - alinear, 0.5f), //H -
+            new Vector3(-0.4f, 0.1f - alinear, 0), //F -
 
             //Morado
-            new Vector3(0, -0.1f - alinear, 0), //A
-            new Vector3(0.25f, 0.5f - alinear, 0.5f), //B
-            new Vector3(0.4f, 0.1f - alinear, 0), //E
+            new Vector3(0, -0.1f - alinear, 0), //A -
+            new Vector3(0.25f, 0.5f - alinear, 0.5f), //B -
+            new Vector3(0.4f, 0.1f - alinear, 0), //E  -
 
             //Morado
-            new Vector3(0, -0.1f - alinear, 0), //A
-            new Vector3(-0.25f, 0.5f - alinear, 0.5f), //C
-            new Vector3(-0.4f, 0.1f - alinear, 0), //F
+            new Vector3(0, -0.1f - alinear, 0), //A -
+            new Vector3(-0.25f, 0.5f - alinear, 0.5f), //C -
+            new Vector3(-0.4f, 0.1f - alinear, 0), //F -
 
             //Rojo
-            new Vector3(0, 0.8f - alinear, 0.75f), //D
-            new Vector3(0.7f, 1 - alinear, 0.5f), //G
-            new Vector3(0.25f, 1.25f - alinear, 0.75f), //I
+            new Vector3(0, 0.8f - alinear, 0.75f), //D -
+            new Vector3(0.7f, 1 - alinear, 0.5f), //G -
+            new Vector3(0.25f, 1.25f - alinear, 0.75f), //I -
 
             //Rojo
-            new Vector3(0, 0.8f - alinear, 0.75f), //D
-            new Vector3(-0.7f, 1 - alinear, 0.5f), //H
-            new Vector3(-0.25f, 1.25f - alinear, 0.75f), //J
+            new Vector3(0, 0.8f - alinear, 0.75f), //D-
+            new Vector3(-0.7f, 1 - alinear, 0.5f), //H  -
+            new Vector3(-0.25f, 1.25f - alinear, 0.75f), //J -
 
             //Rojo
-            new Vector3(0, 0.8f - alinear, 0.75f), //D
-            new Vector3(0.25f, 1.25f - alinear, 0.75f), //I
-            new Vector3(0, 1.3f - alinear, 1f), //K
+            new Vector3(0, 0.8f - alinear, 0.75f), //D -
+            new Vector3(0.25f, 1.25f - alinear, 0.75f), //I -
+            new Vector3(0, 1.3f - alinear, 1f), //K -
 
             //Rojo
-            new Vector3(0, 0.8f - alinear, 0.75f), //D
-            new Vector3(-0.25f, 1.25f - alinear, 0.75f), //J
-            new Vector3(0, 1.3f - alinear, 1f), //K
+            new Vector3(0, 0.8f - alinear, 0.75f), //D -
+            new Vector3(-0.25f, 1.25f - alinear, 0.75f), //J -
+            new Vector3(0, 1.3f - alinear, 1f), //K -
 
             //Morado
-            new Vector3(-0.7f, 1 - alinear, 0.5f), //H
-            new Vector3(-0.4f, 0.1f - alinear, 0), //F
-            new Vector3(-0.8f, 0.6f - alinear, 0), //L
+            new Vector3(-0.7f, 1 - alinear, 0.5f), //H -
+            new Vector3(-0.4f, 0.1f - alinear, 0), //F -
+            new Vector3(-0.8f, 0.6f - alinear, 0), //L -
 
             //Morado
-            new Vector3(0.7f, 1 - alinear, 0.5f), //G
-            new Vector3(0.4f, 0.1f - alinear, 0), //E
-            new Vector3(0.8f, 0.6f - alinear, 0), //M
+            new Vector3(0.7f, 1 - alinear, 0.5f), //G -
+            new Vector3(0.4f, 0.1f - alinear, 0), //E -
+            new Vector3(0.8f, 0.6f - alinear, 0), //M -
 
             //Verde
-            new Vector3(-0.7f, 1 - alinear, 0.5f), //H
-            new Vector3(-1.2f, 1.25f - alinear, 0), //N
-            new Vector3(-0.8f, 0.6f - alinear, 0), //L
+            new Vector3(-0.7f, 1 - alinear, 0.5f), //H -
+            new Vector3(-1.2f, 1.25f - alinear, 0), //N -
+            new Vector3(-0.8f, 0.6f - alinear, 0), //L -
 
             //Verde
-            new Vector3(0.7f, 1 - alinear, 0.5f), //G
-            new Vector3(1.2f, 1.25f - alinear, 0), //O
-            new Vector3(0.8f, 0.6f - alinear, 0), //M
+            new Vector3(0.7f, 1 - alinear, 0.5f), //G -
+            new Vector3(1.2f, 1.25f - alinear, 0), //O -
+            new Vector3(0.8f, 0.6f - alinear, 0), //M -
 
             //Morado
-            new Vector3(0.7f, 1 - alinear, 0.5f), //G
-            new Vector3(1.2f, 1.25f - alinear, 0), //O
-            new Vector3(0.7f, 1.5f - alinear, 0.5f), //P
+            new Vector3(0.7f, 1 - alinear, 0.5f), //G -
+            new Vector3(1.2f, 1.25f - alinear, 0), //O  -
+            new Vector3(0.7f, 1.5f - alinear, 0.5f), //P -
 
             //Morado
-            new Vector3(-0.7f, 1 - alinear, 0.5f), //H
-            new Vector3(-1.2f, 1.25f - alinear, 0), //N
-            new Vector3(-0.7f, 1.5f - alinear, 0.5f), //Q
+            new Vector3(-0.7f, 1 - alinear, 0.5f), //H -
+            new Vector3(-1.2f, 1.25f - alinear, 0), //N -
+            new Vector3(-0.7f, 1.5f - alinear, 0.5f), //Q -
 
             //Rojo
             new Vector3(0.25f, 1.25f - alinear, 0.75f), //I
@@ -201,7 +201,7 @@ public class Examen : MonoBehaviour
             new Vector3(-0.7f, 1.5f - alinear, 0.5f), //Q
             new Vector3(-1.4f, 1.8f - alinear, 0), //Z
             new Vector3(-1.2f, 1.25f - alinear, 0), //N
-
+            
             //Rojo
             new Vector3(0.7f, 2.2f - alinear, 0.5f), //U
             new Vector3(0, 2.4f - alinear, 0.25f), //T
@@ -742,6 +742,8 @@ public class Examen : MonoBehaviour
             new Vector3(-1.6f, 3.1f - alinear, -0.75f), //D2
             new Vector3(-1.8f, 2.5f - alinear, -0.75f), //I2
 
+            ////////////////////////////////////////////////////////
+
             //Amarillo
             new Vector3(1.2f, 3.4f - alinear, -0.25f), //XD
             new Vector3(0.8f, 3.3f - alinear, -0.25f), //XD'nt
@@ -801,6 +803,166 @@ public class Examen : MonoBehaviour
             new Vector3(-0.8f, 3.1f - alinear, -0.75f), //F2
             new Vector3(-1.2f, 4.5f - alinear, -0.5f), //B3
             new Vector3(-1.2f, 3.4f - alinear, -0.25f), //XD2
+
+            //Amarillo
+            new Vector3(-0.4f, 0.1f - alinear, -0.25f), //V1
+            new Vector3(0, -0.1f - alinear, -0.25f), //Z1
+            new Vector3(-0.8f, -1f - alinear, -0.5f), //E3
+
+            //Amarillo
+            new Vector3(-0.4f, 0.1f - alinear, -0.25f), //V1
+            new Vector3(-0.4f, 0.1f - alinear, -0.75f), //P2
+            new Vector3(-0.8f, -1f - alinear, -0.5f), //E3
+
+            //Amarillo
+            new Vector3(0, -0.1f - alinear, -0.75f), //U1
+            new Vector3(-0.4f, 0.1f - alinear, -0.75f), //P2
+            new Vector3(-0.8f, -1f - alinear, -0.5f), //E3
+
+            //Amarillo
+            new Vector3(0, -0.1f - alinear, -0.75f), //U1
+            new Vector3(0, -0.1f - alinear, -0.25f), //Z1
+            new Vector3(-0.8f, -1f - alinear, -0.5f), //E3
+
+            //Amarillo
+            new Vector3(0.4f, 0.1f - alinear, -0.25f), //W1
+            new Vector3(0, -0.1f - alinear, -0.25f), //Z1
+            new Vector3(0.8f, -1f - alinear, -0.5f), //D3
+
+            //Amarillo
+            new Vector3(0.4f, 0.1f - alinear, -0.25f), //V1
+            new Vector3(0.4f, 0.1f - alinear, -0.75f), //P2
+            new Vector3(0.8f, -1f - alinear, -0.5f), //D3
+
+            //Amarillo
+            new Vector3(0, -0.1f - alinear, -0.75f), //U1
+            new Vector3(0.4f, 0.1f - alinear, -0.75f), //P2
+            new Vector3(0.8f, -1f - alinear, -0.5f), //D3
+
+            //Amarillo
+            new Vector3(0, -0.1f - alinear, -0.75f), //U1
+            new Vector3(0, -0.1f - alinear, -0.25f), //Z1
+            new Vector3(0.8f, -1f - alinear, -0.5f), //D3
+
+            //Amarillo
+            new Vector3(-0.4f, 0.1f - alinear, -0.25f), //V1
+            new Vector3(-1f, 0.5f - alinear, -0.25f), //R1
+            new Vector3(-1.5f, -0.5f - alinear, -0.5f), //G3
+
+            //Amarillo
+            new Vector3(-1f, 0.5f - alinear, -0.75f), //N2
+            new Vector3(-1f, 0.5f - alinear, -0.25f), //R1
+            new Vector3(-1.5f, -0.5f - alinear, -0.5f), //G3
+
+            //Amarillo
+            new Vector3(-0.4f, 0.1f - alinear, -0.75f), //P2
+            new Vector3(-1f, 0.5f - alinear, -0.75f), //N2
+            new Vector3(-1.5f, -0.5f - alinear, -0.5f), //G3
+
+            //Amarillo
+            new Vector3(-0.4f, 0.1f - alinear, -0.25f), //V1
+            new Vector3(-0.4f, 0.1f - alinear, -0.75f), //P2
+            new Vector3(-1.5f, -0.5f - alinear, -0.5f), //G3
+
+            //Amarillo
+            new Vector3(0.4f, 0.1f - alinear, -0.25f), //V1
+            new Vector3(1f, 0.5f - alinear, -0.25f), //R1
+            new Vector3(1.5f, -0.5f - alinear, -0.5f), //G3
+
+            //Amarillo
+            new Vector3(1f, 0.5f - alinear, -0.75f), //N2
+            new Vector3(1f, 0.5f - alinear, -0.25f), //R1
+            new Vector3(1.5f, -0.5f - alinear, -0.5f), //G3
+
+            //Amarillo
+            new Vector3(0.4f, 0.1f - alinear, -0.75f), //P2
+            new Vector3(1f, 0.5f - alinear, -0.75f), //N2
+            new Vector3(1.5f, -0.5f - alinear, -0.5f), //G3
+
+            //Amarillo
+            new Vector3(0.4f, 0.1f - alinear, -0.25f), //V1
+            new Vector3(0.4f, 0.1f - alinear, -0.75f), //P2
+            new Vector3(1.5f, -0.5f - alinear, -0.5f), //G3
+
+            //Amarillo
+            new Vector3(-1f, 0.5f - alinear, -0.25f), //R1
+            new Vector3(-1.4f, 1f - alinear, -0.25f), //Q1
+            new Vector3(-2.2f, 0.2f - alinear, -0.5f), //H3
+
+            //Amarillo
+            new Vector3(-1.4f, 1 - alinear, -0.75f), //L2
+            new Vector3(-1.4f, 1f - alinear, -0.25f), //Q1
+            new Vector3(-2.2f, 0.2f - alinear, -0.5f), //H3
+
+            //Amarillo
+            new Vector3(-1.4f, 1 - alinear, -0.75f), //L2
+            new Vector3(-1f, 0.5f - alinear, -0.75f), //N2
+            new Vector3(-2.2f, 0.2f - alinear, -0.5f), //H3
+
+            //Amarillo
+            new Vector3(-1f, 0.5f - alinear, -0.25f), //R1
+            new Vector3(-1f, 0.5f - alinear, -0.75f), //N2
+            new Vector3(-2.2f, 0.2f - alinear, -0.5f), //H3
+
+            //Amarillo
+            new Vector3(1f, 0.5f - alinear, -0.25f), //R1
+            new Vector3(1.4f, 1f - alinear, -0.25f), //Q1
+            new Vector3(2.2f, 0.2f - alinear, -0.5f), //H3
+
+            //Amarillo
+            new Vector3(1.4f, 1 - alinear, -0.75f), //L2
+            new Vector3(1.4f, 1f - alinear, -0.25f), //Q1
+            new Vector3(2.2f, 0.2f - alinear, -0.5f), //H3
+
+            //Amarillo
+            new Vector3(1.4f, 1 - alinear, -0.75f), //L2
+            new Vector3(1f, 0.5f - alinear, -0.75f), //N2
+            new Vector3(2.2f, 0.2f - alinear, -0.5f), //H3
+
+            //Amarillo
+            new Vector3(1f, 0.5f - alinear, -0.25f), //R1
+            new Vector3(1f, 0.5f - alinear, -0.75f), //N2
+            new Vector3(2.2f, 0.2f - alinear, -0.5f), //H3
+
+            //Amarillo
+            new Vector3(-1.4f, 1f - alinear, -0.25f), //Q1
+            new Vector3(-1.6f, 1.5f - alinear, -0.25f), //O1
+            new Vector3(-2.6f, 1f - alinear, -0.5f), //K3
+
+            //Amarillo
+            new Vector3(-1.6f, 1.5f - alinear, -0.75f), //K2
+            new Vector3(-1.6f, 1.5f - alinear, -0.25f), //O1
+            new Vector3(-2.6f, 1f - alinear, -0.5f), //K3
+
+            //Amarillo
+            new Vector3(-1.4f, 1 - alinear, -0.75f), //L2
+            new Vector3(-1.6f, 1.5f - alinear, -0.75f), //K2
+            new Vector3(-2.6f, 1f - alinear, -0.5f), //K3
+
+            //Amarillo
+            new Vector3(-1.4f, 1f - alinear, -0.25f), //Q1
+            new Vector3(-1.4f, 1 - alinear, -0.75f), //L2
+            new Vector3(-2.6f, 1f - alinear, -0.5f), //K3
+
+            //Amarillo
+            new Vector3(1.4f, 1f - alinear, -0.25f), //Q1
+            new Vector3(1.6f, 1.5f - alinear, -0.25f), //O1
+            new Vector3(2.6f, 1f - alinear, -0.5f), //K3
+
+            //Amarillo
+            new Vector3(1.6f, 1.5f - alinear, -0.75f), //K2
+            new Vector3(1.6f, 1.5f - alinear, -0.25f), //O1
+            new Vector3(2.6f, 1f - alinear, -0.5f), //K3
+
+            //Amarillo
+            new Vector3(1.4f, 1 - alinear, -0.75f), //L2
+            new Vector3(1.6f, 1.5f - alinear, -0.75f), //K2
+            new Vector3(2.6f, 1f - alinear, -0.5f), //K3
+
+            //Amarillo
+            new Vector3(1.4f, 1f - alinear, -0.25f), //Q1
+            new Vector3(1.4f, 1 - alinear, -0.75f), //L2
+            new Vector3(2.6f, 1f - alinear, -0.5f), //K3
         };
 
 
@@ -961,33 +1123,790 @@ public class Examen : MonoBehaviour
             451, 450, 452,
             454, 453, 455,
             457, 456, 458,
-            459, 460, 461
+            459, 460, 461,
+            463, 462, 464,
+            465, 466, 467,
+            469, 468, 470,
+            471, 472, 473,
+            474, 475, 476,
+            478, 477, 479,
+            480, 481, 482,
+            484, 483, 485,
+            486, 487, 488,
+            490, 489, 491,
+            493, 492, 494,
+            496, 495, 497,
+            499, 498, 500,
+            501, 502, 503,
+            504, 505, 506,
+            507, 508, 509,
+            510, 511, 512,
+            514, 513, 515,
+            516, 517, 518,
+            520, 519, 521,
+            523, 522, 524,
+            525, 526, 527,
+            529, 528, 530,
+            531, 532, 533,
+            534, 535, 536, 
+            538, 537, 539,
+            541, 540, 542,
+            544, 543, 545,
+            547, 546, 548,
+            549, 550, 551,
+            552, 553, 554,
+            555, 556, 557,
         };
 
-        /*Vector2[] uvs =
+        Vector2[] uvs =
         {
-            new Vector2(0, 0.66f),
-            new Vector2(0.25f, 0.66f),
-            new Vector2(0, 0.33f),
-            new Vector2(0.25f, 0.33f),
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
 
-            new Vector2(0.5f, 0.66f),
-            new Vector2(0.5f, 0.33f),
-            new Vector2(0.75f, 0.66f),
-            new Vector2(0.75f, 0.33f),
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
 
-            new Vector2(1, 0.66f),
-            new Vector2(1, 0.33f),
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
 
-            new Vector2(0.25f, 1),
-            new Vector2(0.5f, 1),
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
 
-            new Vector2(0.25f, 0),
-            new Vector2(0.5f, 0),
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.6f, 0f), //Verde
+            new Vector2(0.6f, 1f), //Verde
+            new Vector2(0.8f, 0f), //Verde
+
+            new Vector2(0.6f, 0f), //Verde
+            new Vector2(0.6f, 1f), //Verde
+            new Vector2(0.8f, 0f), //Verde
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.4f, 0f), //Rojo
+            new Vector2(0.4f, 1f), //Rojo
+            new Vector2(0.6f, 0f), //Rojo
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.6f, 0f), //Verde
+            new Vector2(0.6f, 1f), //Verde
+            new Vector2(0.8f, 0f), //Verde
+
+            new Vector2(0.6f, 0f), //Verde
+            new Vector2(0.6f, 1f), //Verde
+            new Vector2(0.8f, 0f), //Verde
+
+            new Vector2(0.6f, 0f), //Verde
+            new Vector2(0.6f, 1f), //Verde
+            new Vector2(0.8f, 0f), //Verde
+
+            new Vector2(0.6f, 0f), //Verde
+            new Vector2(0.6f, 1f), //Verde
+            new Vector2(0.8f, 0f), //Verde
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.2f, 0f), //Morado
+            new Vector2(0.2f, 1f), //Morado
+            new Vector2(0.4f, 0f), //Morado
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0.8f, 0f), //Negro
+            new Vector2(0.8f, 1f), //Negro
+            new Vector2(1f, 0f), //Negro
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0f, 0f), //Amarillo
+            new Vector2(0f, 1f), //Amarillo
+            new Vector2(0.2f, 0f), //Amarillo
         };
-        */
+
         meshFilter.mesh.triangles = triangles;
-        //meshFilter.mesh.uv = uvs;
+        meshFilter.mesh.uv = uvs;
         meshFilter.mesh.Optimize();
         meshFilter.mesh.RecalculateNormals();
 
