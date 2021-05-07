@@ -963,6 +963,68 @@ public class Examen : MonoBehaviour
             new Vector3(1.4f, 1f - alinear, -0.25f), //Q1
             new Vector3(1.4f, 1 - alinear, -0.75f), //L2
             new Vector3(2.6f, 1f - alinear, -0.5f), //K3
+
+            //Ojo
+            new Vector3(0.75f, 2.7f - alinear, 0.2f), //O3
+            new Vector3(0.3f, 2.4f - alinear, 0.4f), //P3
+            new Vector3(0.7f, 2.2f - alinear, 0.7f), //R3
+
+            //Ojo
+            new Vector3(0.3f, 2f - alinear, 0.7f), //M3
+            new Vector3(0.3f, 2.4f - alinear, 0.4f), //P3
+            new Vector3(0.7f, 2.2f - alinear, 0.7f), //R3
+
+            //Ojo
+            new Vector3(0.3f, 2f - alinear, 0.7f), //M3
+            new Vector3(0.75f, 1.7f - alinear, 0.5f), //Q3
+            new Vector3(0.7f, 2.2f - alinear, 0.7f), //R3
+
+            //Ojo
+            new Vector3(1.2f, 2f - alinear, 0.3f), //N3
+            new Vector3(0.75f, 1.7f - alinear, 0.5f), //Q3
+            new Vector3(0.7f, 2.2f - alinear, 0.7f), //R3
+
+            //Ojo
+            new Vector3(1.2f, 2f - alinear, 0.3f), //N3
+            new Vector3(1.2f, 2.4f - alinear, 0.3f), //L3
+            new Vector3(0.7f, 2.2f - alinear, 0.7f), //R3
+
+            //Ojo
+            new Vector3(0.75f, 2.7f - alinear, 0.2f), //O3
+            new Vector3(1.2f, 2.4f - alinear, 0.3f), //L3
+            new Vector3(0.7f, 2.2f - alinear, 0.7f), //R3
+
+            /////////////////
+            
+            //Ojo
+            new Vector3(-0.75f, 2.7f - alinear, 0.2f), //O3
+            new Vector3(-0.3f, 2.4f - alinear, 0.4f), //P3
+            new Vector3(-0.7f, 2.2f - alinear, 0.7f), //R3
+
+            //Ojo
+            new Vector3(-0.3f, 2f - alinear, 0.7f), //M3
+            new Vector3(-0.3f, 2.4f - alinear, 0.4f), //P3
+            new Vector3(-0.7f, 2.2f - alinear, 0.7f), //R3
+
+            //Ojo
+            new Vector3(-0.3f, 2f - alinear, 0.7f), //M3
+            new Vector3(-0.75f, 1.7f - alinear, 0.5f), //Q3
+            new Vector3(-0.7f, 2.2f - alinear, 0.7f), //R3
+
+            //Ojo
+            new Vector3(-1.2f, 2f - alinear, 0.3f), //N3
+            new Vector3(-0.75f, 1.7f - alinear, 0.5f), //Q3
+            new Vector3(-0.7f, 2.2f - alinear, 0.7f), //R3
+
+            //Ojo
+            new Vector3(-1.2f, 2f - alinear, 0.3f), //N3
+            new Vector3(-1.2f, 2.4f - alinear, 0.3f), //L3
+            new Vector3(-0.7f, 2.2f - alinear, 0.7f), //R3
+
+            //Ojo
+            new Vector3(-0.75f, 2.7f - alinear, 0.2f), //O3
+            new Vector3(-1.2f, 2.4f - alinear, 0.3f), //L3
+            new Vector3(-0.7f, 2.2f - alinear, 0.7f), //R3
         };
 
 
@@ -1155,7 +1217,19 @@ public class Examen : MonoBehaviour
             547, 546, 548,
             549, 550, 551,
             552, 553, 554,
-            555, 556, 557,
+            555, 556, 557, //
+            558, 559, 560,
+            562, 561, 563,
+            564, 565, 566,
+            568, 567, 569,
+            570, 571, 572,
+            574, 573, 575, //
+            577, 576, 578,
+            579, 580, 581,
+            583, 582, 584,
+            585, 586, 587,
+            589, 588, 590,
+            591, 592, 593
         };
 
         Vector2[] uvs =
@@ -1903,6 +1977,55 @@ public class Examen : MonoBehaviour
             new Vector2(0f, 0f), //Amarillo
             new Vector2(0f, 1f), //Amarillo
             new Vector2(0.2f, 0f), //Amarillo
+
+            new Vector2(0.13f, 0f), //Ojo
+            new Vector2(0f, 1f), //Ojo
+            new Vector2(0.13f, 1f), //Ojo
+
+            new Vector2(0.13f, 0f), //Ojo
+            new Vector2(0f, 1f), //Ojo
+            new Vector2(0.13f, 1f), //Ojo
+
+            new Vector2(0.13f, 0f), //Ojo
+            new Vector2(0f, 1f), //Ojo
+            new Vector2(0.13f, 1f), //Ojo
+
+            new Vector2(0.13f, 0f), //Ojo
+            new Vector2(0f, 1f), //Ojo
+            new Vector2(0.13f, 1f), //Ojo
+
+            new Vector2(0.13f, 0f), //Ojo
+            new Vector2(0f, 1f), //Ojo
+            new Vector2(0.13f, 1f), //Ojo
+
+            new Vector2(0.13f, 0f), //Ojo
+            new Vector2(0f, 1f), //Ojo
+            new Vector2(0.13f, 1f), //Ojo
+
+            new Vector2(0.13f, 0f), //Ojo
+            new Vector2(0f, 1f), //Ojo
+            new Vector2(0.13f, 1f), //Ojo
+
+            new Vector2(0.13f, 0f), //Ojo
+            new Vector2(0f, 1f), //Ojo
+            new Vector2(0.13f, 1f), //Ojo
+
+            new Vector2(0.13f, 0f), //Ojo
+            new Vector2(0f, 1f), //Ojo
+            new Vector2(0.13f, 1f), //Ojo
+
+            new Vector2(0.13f, 0f), //Ojo
+            new Vector2(0f, 1f), //Ojo
+            new Vector2(0.13f, 1f), //Ojo
+
+            new Vector2(0.13f, 0f), //Ojo
+            new Vector2(0f, 1f), //Ojo
+            new Vector2(0.13f, 1f), //Ojo
+
+            new Vector2(0.13f, 0f), //Ojo
+            new Vector2(0f, 1f), //Ojo
+            new Vector2(0.13f, 1f), //Ojo
+
         };
 
         meshFilter.mesh.triangles = triangles;

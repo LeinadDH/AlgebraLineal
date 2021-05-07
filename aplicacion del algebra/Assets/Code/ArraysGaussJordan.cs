@@ -8,7 +8,9 @@ public class ArraysGaussJordan : MonoBehaviour
     public GameObject Cube;
     public Vector3 Delta;
     public float timer;
-    public bool Move = false;
+    public bool MoveZ = false;
+    public bool MoveX = false;
+    public bool MoveY = false;
     public bool reloadScene = false;
 
     // Start is called before the first frame update
@@ -23,27 +25,44 @@ public class ArraysGaussJordan : MonoBehaviour
         timer = Time.time;
         if (timer >= 34f)
         {
-            Move = true;
+            MoveZ = true;
         }
         if(timer >= 89f)
         {
-            Move = false;
+            MoveZ = false; 
+            Delta.z = 0;
+            
         }
         if (timer >= 96f)
         {
-            Move = true;
+            MoveY = true;
+        }
+        if (timer >= 129f)
+        {
+            MoveY = false;
+            Delta.y = 0;
+        }
+        if (timer >= 156f)
+        {
+            MoveX = true;
         }
         if (timer >= 212)
         {
-            Delta.z = 0;
+            MoveX = false;
+            Delta.x = 0;
+            Cube.transform.position = new Vector3(0, 0, 0);
         }
         if (timer >= 223)
         {
             reloadScene = true;
         }
 
-        if (Move == true)
+        if (MoveZ == true)
         {
+            if (Delta.z == 0)
+            {
+                Delta.z = 0.05f;
+            }
             if (Cube.transform.position.z >= 3.5f)
             {
                 Delta.z = -0.05f;
@@ -53,6 +72,52 @@ public class ArraysGaussJordan : MonoBehaviour
                 Delta.z = 0.05f;
             }
             for (int i = 0; i < 140; i++)
+            {
+                if (i < 1)
+                {
+                    Cube.transform.position = Array(Cube.transform.position);
+                }
+            }
+        }
+
+        if (MoveX == true)
+        {
+            if (Delta.x == 0)
+            {
+                Delta.x = 0.02f;
+            }
+            if (Cube.transform.position.x >= 7.5f)
+            {
+                Delta.x = -0.02f;
+            }
+            if (Cube.transform.position.x <= -7.5f)
+            {
+                Delta.x = 0.02f;
+            }
+            for (int i = 0; i < 140; i++)
+            {
+                if (i < 1)
+                {
+                    Cube.transform.position = Array(Cube.transform.position);
+                }
+            }
+        }
+
+        if (MoveY == true)
+        {
+            if (Delta.y == 0)
+            {
+                Delta.y = 0.005f;
+            }
+            if (Cube.transform.position.y >= 2.5f)
+            {
+                Delta.y = -0.005f;
+            }
+            if (Cube.transform.position.y <= -2.5f)
+            {
+                Delta.y = 0.005f;
+            }
+            for (int i = 0; i < 280; i++)
             {
                 if (i < 1)
                 {
